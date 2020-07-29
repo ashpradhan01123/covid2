@@ -1,0 +1,1881 @@
+country,date,cases
+Brazil,01/22/20,0
+Brazil,01/23/20,0
+Brazil,01/24/20,0
+Brazil,01/25/20,0
+Brazil,01/26/20,0
+Brazil,01/27/20,0
+Brazil,01/28/20,0
+Brazil,01/29/20,0
+Brazil,01/30/20,0
+Brazil,01/31/20,0
+Brazil,02/01/20,0
+Brazil,02/02/20,0
+Brazil,02/03/20,0
+Brazil,02/04/20,0
+Brazil,02/05/20,0
+Brazil,02/06/20,0
+Brazil,02/07/20,0
+Brazil,02/08/20,0
+Brazil,02/09/20,0
+Brazil,02/10/20,0
+Brazil,02/11/20,0
+Brazil,02/12/20,0
+Brazil,02/13/20,0
+Brazil,02/14/20,0
+Brazil,02/15/20,0
+Brazil,02/16/20,0
+Brazil,02/17/20,0
+Brazil,02/18/20,0
+Brazil,02/19/20,0
+Brazil,02/20/20,0
+Brazil,02/21/20,0
+Brazil,02/22/20,0
+Brazil,02/23/20,0
+Brazil,02/24/20,0
+Brazil,02/25/20,0
+Brazil,02/26/20,1
+Brazil,02/27/20,1
+Brazil,02/28/20,1
+Brazil,02/29/20,2
+Brazil,03/01/20,2
+Brazil,03/02/20,2
+Brazil,03/03/20,2
+Brazil,03/04/20,4
+Brazil,03/05/20,4
+Brazil,03/06/20,13
+Brazil,03/07/20,13
+Brazil,03/08/20,20
+Brazil,03/09/20,25
+Brazil,03/10/20,31
+Brazil,03/11/20,38
+Brazil,03/12/20,52
+Brazil,03/13/20,151
+Brazil,03/14/20,151
+Brazil,03/15/20,162
+Brazil,03/16/20,200
+Brazil,03/17/20,321
+Brazil,03/18/20,372
+Brazil,03/19/20,621
+Brazil,03/20/20,793
+Brazil,03/21/20,1021
+Brazil,03/22/20,1546
+Brazil,03/23/20,1924
+Brazil,03/24/20,2247
+Brazil,03/25/20,2554
+Brazil,03/26/20,2985
+Brazil,03/27/20,3417
+Brazil,03/28/20,3904
+Brazil,03/29/20,4256
+Brazil,03/30/20,4579
+Brazil,03/31/20,5717
+Brazil,04/01/20,6836
+Brazil,04/02/20,8044
+Brazil,04/03/20,9056
+Brazil,04/04/20,10360
+Brazil,04/05/20,11130
+Brazil,04/06/20,12161
+Brazil,04/07/20,14034
+Brazil,04/08/20,16170
+Brazil,04/09/20,18092
+Brazil,04/10/20,19638
+Brazil,04/11/20,20727
+Brazil,04/12/20,22192
+Brazil,04/13/20,23430
+Brazil,04/14/20,25262
+Brazil,04/15/20,28320
+Brazil,04/16/20,30425
+Brazil,04/17/20,33682
+Brazil,04/18/20,36658
+Brazil,04/19/20,38654
+Brazil,04/20/20,40743
+Brazil,04/21/20,43079
+Brazil,04/22/20,45757
+Brazil,04/23/20,50036
+Brazil,04/24/20,54043
+Brazil,04/25/20,59324
+Brazil,04/26/20,63100
+Brazil,04/27/20,67446
+Brazil,04/28/20,73235
+Brazil,04/29/20,79685
+Brazil,04/30/20,87187
+Brazil,05/01/20,92202
+Brazil,05/02/20,97100
+Brazil,05/03/20,101826
+Brazil,05/04/20,108620
+Brazil,05/05/20,115455
+Brazil,05/06/20,126611
+Brazil,05/07/20,135773
+Brazil,05/08/20,146894
+Brazil,05/09/20,156061
+Brazil,05/10/20,162699
+Brazil,05/11/20,169594
+Brazil,05/12/20,178214
+Brazil,05/13/20,190137
+Brazil,05/14/20,203165
+Brazil,05/15/20,220291
+Brazil,05/16/20,233511
+Brazil,05/17/20,241080
+Brazil,05/18/20,255368
+Brazil,05/19/20,271885
+Brazil,05/20/20,291579
+Brazil,05/21/20,310087
+Brazil,05/22/20,330890
+Brazil,05/23/20,347398
+Brazil,05/24/20,363211
+Brazil,05/25/20,374898
+Brazil,05/26/20,391222
+Brazil,05/27/20,411821
+Brazil,05/28/20,438238
+Brazil,05/29/20,465166
+Brazil,05/30/20,498440
+Brazil,05/31/20,514849
+Brazil,06/01/20,526447
+Brazil,06/02/20,555383
+Brazil,06/03/20,584016
+Brazil,06/04/20,614941
+Brazil,06/05/20,645771
+Brazil,06/06/20,672846
+Brazil,06/07/20,691758
+Brazil,06/08/20,707412
+Brazil,06/09/20,739503
+Brazil,06/10/20,772416
+Brazil,06/11/20,802828
+Brazil,06/12/20,828810
+Brazil,06/13/20,850514
+Brazil,06/14/20,867624
+Brazil,06/15/20,888271
+Brazil,06/16/20,923189
+Brazil,06/17/20,955377
+Brazil,06/18/20,978142
+Brazil,06/19/20,1032913
+Brazil,06/20/20,1067579
+Brazil,06/21/20,1083341
+Brazil,06/22/20,1106470
+Brazil,06/23/20,1145906
+Brazil,06/24/20,1188631
+Brazil,06/25/20,1228114
+Brazil,06/26/20,1274974
+Brazil,06/27/20,1313667
+Brazil,06/28/20,1344143
+Brazil,06/29/20,1368195
+Brazil,06/30/20,1402041
+Brazil,07/01/20,1448753
+Brazil,07/02/20,1496858
+Brazil,07/03/20,1539081
+Brazil,07/04/20,1577004
+Brazil,07/05/20,1603055
+Brazil,07/06/20,1623284
+Brazil,07/07/20,1668589
+Brazil,07/08/20,1713160
+Brazil,07/09/20,1755779
+Brazil,07/10/20,1800827
+Brazil,07/11/20,1839850
+Brazil,07/12/20,1864681
+Brazil,07/13/20,1884967
+Brazil,07/14/20,1926824
+Brazil,07/15/20,1966748
+Brazil,07/16/20,2012151
+Brazil,07/17/20,2046328
+Brazil,07/18/20,2074860
+Brazil,07/19/20,2098389
+Brazil,07/20/20,2118646
+Brazil,07/21/20,2159654
+Brazil,07/22/20,2227514
+Brazil,07/23/20,2287475
+Brazil,07/24/20,2343366
+Brazil,07/25/20,2394513
+Brazil,07/26/20,2419091
+Brazil,07/27/20,2442375
+Chile,01/22/20,0
+Chile,01/23/20,0
+Chile,01/24/20,0
+Chile,01/25/20,0
+Chile,01/26/20,0
+Chile,01/27/20,0
+Chile,01/28/20,0
+Chile,01/29/20,0
+Chile,01/30/20,0
+Chile,01/31/20,0
+Chile,02/01/20,0
+Chile,02/02/20,0
+Chile,02/03/20,0
+Chile,02/04/20,0
+Chile,02/05/20,0
+Chile,02/06/20,0
+Chile,02/07/20,0
+Chile,02/08/20,0
+Chile,02/09/20,0
+Chile,02/10/20,0
+Chile,02/11/20,0
+Chile,02/12/20,0
+Chile,02/13/20,0
+Chile,02/14/20,0
+Chile,02/15/20,0
+Chile,02/16/20,0
+Chile,02/17/20,0
+Chile,02/18/20,0
+Chile,02/19/20,0
+Chile,02/20/20,0
+Chile,02/21/20,0
+Chile,02/22/20,0
+Chile,02/23/20,2
+Chile,02/24/20,2
+Chile,02/25/20,2
+Chile,02/26/20,2
+Chile,02/27/20,2
+Chile,02/28/20,2
+Chile,02/29/20,2
+Chile,03/01/20,9
+Chile,03/02/20,9
+Chile,03/03/20,10
+Chile,03/04/20,10
+Chile,03/05/20,13
+Chile,03/06/20,13
+Chile,03/07/20,13
+Chile,03/08/20,20
+Chile,03/09/20,20
+Chile,03/10/20,25
+Chile,03/11/20,35
+Chile,03/12/20,35
+Chile,03/13/20,55
+Chile,03/14/20,88
+Chile,03/15/20,101
+Chile,03/16/20,182
+Chile,03/17/20,228
+Chile,03/18/20,265
+Chile,03/19/20,265
+Chile,03/20/20,461
+Chile,03/21/20,592
+Chile,03/22/20,687
+Chile,03/23/20,801
+Chile,03/24/20,977
+Chile,03/25/20,1197
+Chile,03/26/20,1361
+Chile,03/27/20,1665
+Chile,03/28/20,2015
+Chile,03/29/20,2245
+Chile,03/30/20,2555
+Chile,03/31/20,2844
+Chile,04/01/20,3137
+Chile,04/02/20,3510
+Chile,04/03/20,3843
+Chile,04/04/20,4355
+Chile,04/05/20,4665
+Chile,04/06/20,5009
+Chile,04/07/20,5310
+Chile,04/08/20,5740
+Chile,04/09/20,6166
+Chile,04/10/20,6695
+Chile,04/11/20,7366
+Chile,04/12/20,7652
+Chile,04/13/20,7964
+Chile,04/14/20,8356
+Chile,04/15/20,8712
+Chile,04/16/20,9246
+Chile,04/17/20,9691
+Chile,04/18/20,10598
+Chile,04/19/20,10956
+Chile,04/20/20,11375
+Chile,04/21/20,11700
+Chile,04/22/20,12164
+Chile,04/23/20,12680
+Chile,04/24/20,13174
+Chile,04/25/20,14537
+Chile,04/26/20,15010
+Chile,04/27/20,15492
+Chile,04/28/20,16044
+Chile,04/29/20,16564
+Chile,04/30/20,17702
+Chile,05/01/20,18687
+Chile,05/02/20,21213
+Chile,05/03/20,22441
+Chile,05/04/20,23421
+Chile,05/05/20,24794
+Chile,05/06/20,25826
+Chile,05/07/20,27359
+Chile,05/08/20,28750
+Chile,05/09/20,32208
+Chile,05/10/20,33855
+Chile,05/11/20,35052
+Chile,05/12/20,36710
+Chile,05/13/20,39370
+Chile,05/14/20,42029
+Chile,05/15/20,44531
+Chile,05/16/20,50016
+Chile,05/17/20,52369
+Chile,05/18/20,54647
+Chile,05/19/20,58167
+Chile,05/20/20,62205
+Chile,05/21/20,66169
+Chile,05/22/20,70445
+Chile,05/23/20,80287
+Chile,05/24/20,83996
+Chile,05/25/20,88891
+Chile,05/26/20,92855
+Chile,05/27/20,97183
+Chile,05/28/20,101837
+Chile,05/29/20,105532
+Chile,05/30/20,118720
+Chile,05/31/20,123550
+Chile,06/01/20,129020
+Chile,06/02/20,132548
+Chile,06/03/20,137490
+Chile,06/04/20,142154
+Chile,06/05/20,146361
+Chile,06/06/20,160351
+Chile,06/07/20,166756
+Chile,06/08/20,171452
+Chile,06/09/20,175365
+Chile,06/10/20,181062
+Chile,06/11/20,186698
+Chile,06/12/20,193452
+Chile,06/13/20,201634
+Chile,06/14/20,208572
+Chile,06/15/20,213715
+Chile,06/16/20,218728
+Chile,06/17/20,220628
+Chile,06/18/20,225103
+Chile,06/19/20,231393
+Chile,06/20/20,236748
+Chile,06/21/20,242355
+Chile,06/22/20,246963
+Chile,06/23/20,250767
+Chile,06/24/20,254416
+Chile,06/25/20,259064
+Chile,06/26/20,263360
+Chile,06/27/20,267766
+Chile,06/28/20,271982
+Chile,06/29/20,275999
+Chile,06/30/20,279393
+Chile,07/01/20,282043
+Chile,07/02/20,284541
+Chile,07/03/20,288089
+Chile,07/04/20,291847
+Chile,07/05/20,295532
+Chile,07/06/20,298557
+Chile,07/07/20,301019
+Chile,07/08/20,303083
+Chile,07/09/20,306216
+Chile,07/10/20,309274
+Chile,07/11/20,312029
+Chile,07/12/20,315041
+Chile,07/13/20,317657
+Chile,07/14/20,319493
+Chile,07/15/20,321205
+Chile,07/16/20,323698
+Chile,07/17/20,326439
+Chile,07/18/20,328846
+Chile,07/19/20,330930
+Chile,07/20/20,333029
+Chile,07/21/20,334683
+Chile,07/22/20,336402
+Chile,07/23/20,338759
+Chile,07/24/20,341304
+Chile,07/25/20,343592
+Chile,07/26/20,345790
+Chile,07/27/20,347923
+India,01/22/20,0
+India,01/23/20,0
+India,01/24/20,0
+India,01/25/20,0
+India,01/26/20,0
+India,01/27/20,0
+India,01/28/20,0
+India,01/29/20,0
+India,01/30/20,1
+India,01/31/20,1
+India,02/01/20,1
+India,02/02/20,2
+India,02/03/20,3
+India,02/04/20,3
+India,02/05/20,3
+India,02/06/20,3
+India,02/07/20,3
+India,02/08/20,3
+India,02/09/20,3
+India,02/10/20,3
+India,02/11/20,3
+India,02/12/20,3
+India,02/13/20,3
+India,02/14/20,3
+India,02/15/20,3
+India,02/16/20,3
+India,02/17/20,3
+India,02/18/20,3
+India,02/19/20,3
+India,02/20/20,3
+India,02/21/20,3
+India,02/22/20,3
+India,02/23/20,3
+India,02/24/20,3
+India,02/25/20,3
+India,02/26/20,3
+India,02/27/20,3
+India,02/28/20,3
+India,02/29/20,3
+India,03/01/20,3
+India,03/02/20,5
+India,03/03/20,5
+India,03/04/20,28
+India,03/05/20,30
+India,03/06/20,31
+India,03/07/20,34
+India,03/08/20,39
+India,03/09/20,43
+India,03/10/20,56
+India,03/11/20,62
+India,03/12/20,73
+India,03/13/20,82
+India,03/14/20,102
+India,03/15/20,113
+India,03/16/20,119
+India,03/17/20,142
+India,03/18/20,156
+India,03/19/20,194
+India,03/20/20,244
+India,03/21/20,330
+India,03/22/20,396
+India,03/23/20,499
+India,03/24/20,536
+India,03/25/20,657
+India,03/26/20,727
+India,03/27/20,887
+India,03/28/20,987
+India,03/29/20,1024
+India,03/30/20,1251
+India,03/31/20,1397
+India,04/01/20,1998
+India,04/02/20,2543
+India,04/03/20,2567
+India,04/04/20,3082
+India,04/05/20,3588
+India,04/06/20,4778
+India,04/07/20,5311
+India,04/08/20,5916
+India,04/09/20,6725
+India,04/10/20,7598
+India,04/11/20,8446
+India,04/12/20,9205
+India,04/13/20,10453
+India,04/14/20,11487
+India,04/15/20,12322
+India,04/16/20,13430
+India,04/17/20,14352
+India,04/18/20,15722
+India,04/19/20,17615
+India,04/20/20,18539
+India,04/21/20,20080
+India,04/22/20,21370
+India,04/23/20,23077
+India,04/24/20,24530
+India,04/25/20,26283
+India,04/26/20,27890
+India,04/27/20,29451
+India,04/28/20,31324
+India,04/29/20,33062
+India,04/30/20,34863
+India,05/01/20,37257
+India,05/02/20,39699
+India,05/03/20,42505
+India,05/04/20,46437
+India,05/05/20,49400
+India,05/06/20,52987
+India,05/07/20,56351
+India,05/08/20,59695
+India,05/09/20,62808
+India,05/10/20,67161
+India,05/11/20,70768
+India,05/12/20,74292
+India,05/13/20,78055
+India,05/14/20,81997
+India,05/15/20,85784
+India,05/16/20,90648
+India,05/17/20,95698
+India,05/18/20,100328
+India,05/19/20,106475
+India,05/20/20,112028
+India,05/21/20,118226
+India,05/22/20,124794
+India,05/23/20,131423
+India,05/24/20,138536
+India,05/25/20,144950
+India,05/26/20,150793
+India,05/27/20,158086
+India,05/28/20,165386
+India,05/29/20,173491
+India,05/30/20,181827
+India,05/31/20,190609
+India,06/01/20,198370
+India,06/02/20,207191
+India,06/03/20,216824
+India,06/04/20,226713
+India,06/05/20,236184
+India,06/06/20,246622
+India,06/07/20,257486
+India,06/08/20,265928
+India,06/09/20,276146
+India,06/10/20,286605
+India,06/11/20,297535
+India,06/12/20,308993
+India,06/13/20,320922
+India,06/14/20,332424
+India,06/15/20,343091
+India,06/16/20,354065
+India,06/17/20,366946
+India,06/18/20,380532
+India,06/19/20,395048
+India,06/20/20,410451
+India,06/21/20,425282
+India,06/22/20,440215
+India,06/23/20,456183
+India,06/24/20,473105
+India,06/25/20,490401
+India,06/26/20,508953
+India,06/27/20,528859
+India,06/28/20,548318
+India,06/29/20,566840
+India,06/30/20,585481
+India,07/01/20,604641
+India,07/02/20,625544
+India,07/03/20,648315
+India,07/04/20,673165
+India,07/05/20,697413
+India,07/06/20,719664
+India,07/07/20,742417
+India,07/08/20,767296
+India,07/09/20,793802
+India,07/10/20,820916
+India,07/11/20,849522
+India,07/12/20,878254
+India,07/13/20,906752
+India,07/14/20,936181
+India,07/15/20,968857
+India,07/16/20,1003832
+India,07/17/20,1039084
+India,07/18/20,1077781
+India,07/19/20,1118206
+India,07/20/20,1155338
+India,07/21/20,1193078
+India,07/22/20,1238798
+India,07/23/20,1288108
+India,07/24/20,1337024
+India,07/25/20,1385635
+India,07/26/20,1435616
+India,07/27/20,1480073
+Iran,01/22/20,0
+Iran,01/23/20,0
+Iran,01/24/20,0
+Iran,01/25/20,0
+Iran,01/26/20,0
+Iran,01/27/20,0
+Iran,01/28/20,0
+Iran,01/29/20,0
+Iran,01/30/20,0
+Iran,01/31/20,0
+Iran,02/01/20,0
+Iran,02/02/20,0
+Iran,02/03/20,0
+Iran,02/04/20,0
+Iran,02/05/20,0
+Iran,02/06/20,0
+Iran,02/07/20,0
+Iran,02/08/20,0
+Iran,02/09/20,0
+Iran,02/10/20,0
+Iran,02/11/20,0
+Iran,02/12/20,0
+Iran,02/13/20,0
+Iran,02/14/20,0
+Iran,02/15/20,0
+Iran,02/16/20,0
+Iran,02/17/20,0
+Iran,02/18/20,0
+Iran,02/19/20,2
+Iran,02/20/20,5
+Iran,02/21/20,18
+Iran,02/22/20,28
+Iran,02/23/20,43
+Iran,02/24/20,61
+Iran,02/25/20,95
+Iran,02/26/20,139
+Iran,02/27/20,245
+Iran,02/28/20,388
+Iran,02/29/20,593
+Iran,03/01/20,978
+Iran,03/02/20,1501
+Iran,03/03/20,2336
+Iran,03/04/20,2922
+Iran,03/05/20,3513
+Iran,03/06/20,4747
+Iran,03/07/20,5823
+Iran,03/08/20,6566
+Iran,03/09/20,7161
+Iran,03/10/20,8042
+Iran,03/11/20,9000
+Iran,03/12/20,10075
+Iran,03/13/20,11364
+Iran,03/14/20,12729
+Iran,03/15/20,13938
+Iran,03/16/20,14991
+Iran,03/17/20,16169
+Iran,03/18/20,17361
+Iran,03/19/20,18407
+Iran,03/20/20,19644
+Iran,03/21/20,20610
+Iran,03/22/20,21638
+Iran,03/23/20,23049
+Iran,03/24/20,24811
+Iran,03/25/20,27017
+Iran,03/26/20,29406
+Iran,03/27/20,32332
+Iran,03/28/20,35408
+Iran,03/29/20,38309
+Iran,03/30/20,41495
+Iran,03/31/20,44605
+Iran,04/01/20,47593
+Iran,04/02/20,50468
+Iran,04/03/20,53183
+Iran,04/04/20,55743
+Iran,04/05/20,58226
+Iran,04/06/20,60500
+Iran,04/07/20,62589
+Iran,04/08/20,64586
+Iran,04/09/20,66220
+Iran,04/10/20,68192
+Iran,04/11/20,70029
+Iran,04/12/20,71686
+Iran,04/13/20,73303
+Iran,04/14/20,74877
+Iran,04/15/20,76389
+Iran,04/16/20,77995
+Iran,04/17/20,79494
+Iran,04/18/20,80868
+Iran,04/19/20,82211
+Iran,04/20/20,83505
+Iran,04/21/20,84802
+Iran,04/22/20,85996
+Iran,04/23/20,87026
+Iran,04/24/20,88194
+Iran,04/25/20,89328
+Iran,04/26/20,90481
+Iran,04/27/20,91472
+Iran,04/28/20,92584
+Iran,04/29/20,93657
+Iran,04/30/20,94640
+Iran,05/01/20,95646
+Iran,05/02/20,96448
+Iran,05/03/20,97424
+Iran,05/04/20,98647
+Iran,05/05/20,99970
+Iran,05/06/20,101650
+Iran,05/07/20,103135
+Iran,05/08/20,104691
+Iran,05/09/20,106220
+Iran,05/10/20,107603
+Iran,05/11/20,109286
+Iran,05/12/20,110767
+Iran,05/13/20,112725
+Iran,05/14/20,114533
+Iran,05/15/20,116635
+Iran,05/16/20,118392
+Iran,05/17/20,120198
+Iran,05/18/20,122492
+Iran,05/19/20,124603
+Iran,05/20/20,126949
+Iran,05/21/20,129341
+Iran,05/22/20,131652
+Iran,05/23/20,133521
+Iran,05/24/20,135701
+Iran,05/25/20,137724
+Iran,05/26/20,139511
+Iran,05/27/20,141591
+Iran,05/28/20,143849
+Iran,05/29/20,146668
+Iran,05/30/20,148950
+Iran,05/31/20,151466
+Iran,06/01/20,154445
+Iran,06/02/20,157562
+Iran,06/03/20,160696
+Iran,06/04/20,164270
+Iran,06/05/20,167156
+Iran,06/06/20,169425
+Iran,06/07/20,171789
+Iran,06/08/20,173832
+Iran,06/09/20,175927
+Iran,06/10/20,177938
+Iran,06/11/20,180156
+Iran,06/12/20,182525
+Iran,06/13/20,184955
+Iran,06/14/20,187427
+Iran,06/15/20,189876
+Iran,06/16/20,192439
+Iran,06/17/20,195051
+Iran,06/18/20,197647
+Iran,06/19/20,200262
+Iran,06/20/20,202584
+Iran,06/21/20,204952
+Iran,06/22/20,207525
+Iran,06/23/20,209970
+Iran,06/24/20,212501
+Iran,06/25/20,215096
+Iran,06/26/20,217724
+Iran,06/27/20,220180
+Iran,06/28/20,222669
+Iran,06/29/20,225205
+Iran,06/30/20,227662
+Iran,07/01/20,230211
+Iran,07/02/20,232863
+Iran,07/03/20,235429
+Iran,07/04/20,237878
+Iran,07/05/20,240438
+Iran,07/06/20,243051
+Iran,07/07/20,245688
+Iran,07/08/20,248379
+Iran,07/09/20,250458
+Iran,07/10/20,252720
+Iran,07/11/20,255117
+Iran,07/12/20,257303
+Iran,07/13/20,259652
+Iran,07/14/20,262173
+Iran,07/15/20,264561
+Iran,07/16/20,267061
+Iran,07/17/20,269440
+Iran,07/18/20,271606
+Iran,07/19/20,273788
+Iran,07/20/20,276202
+Iran,07/21/20,278827
+Iran,07/22/20,281413
+Iran,07/23/20,284034
+Iran,07/24/20,286523
+Iran,07/25/20,288839
+Iran,07/26/20,291172
+Iran,07/27/20,293606
+Mexico,01/22/20,0
+Mexico,01/23/20,0
+Mexico,01/24/20,0
+Mexico,01/25/20,0
+Mexico,01/26/20,0
+Mexico,01/27/20,0
+Mexico,01/28/20,0
+Mexico,01/29/20,0
+Mexico,01/30/20,0
+Mexico,01/31/20,0
+Mexico,02/01/20,0
+Mexico,02/02/20,0
+Mexico,02/03/20,0
+Mexico,02/04/20,0
+Mexico,02/05/20,0
+Mexico,02/06/20,0
+Mexico,02/07/20,0
+Mexico,02/08/20,0
+Mexico,02/09/20,0
+Mexico,02/10/20,0
+Mexico,02/11/20,0
+Mexico,02/12/20,0
+Mexico,02/13/20,0
+Mexico,02/14/20,0
+Mexico,02/15/20,0
+Mexico,02/16/20,0
+Mexico,02/17/20,0
+Mexico,02/18/20,0
+Mexico,02/19/20,0
+Mexico,02/20/20,0
+Mexico,02/21/20,0
+Mexico,02/22/20,0
+Mexico,02/23/20,0
+Mexico,02/24/20,0
+Mexico,02/25/20,0
+Mexico,02/26/20,0
+Mexico,02/27/20,0
+Mexico,02/28/20,1
+Mexico,02/29/20,4
+Mexico,03/01/20,5
+Mexico,03/02/20,5
+Mexico,03/03/20,5
+Mexico,03/04/20,5
+Mexico,03/05/20,5
+Mexico,03/06/20,6
+Mexico,03/07/20,6
+Mexico,03/08/20,7
+Mexico,03/09/20,7
+Mexico,03/10/20,7
+Mexico,03/11/20,8
+Mexico,03/12/20,12
+Mexico,03/13/20,26
+Mexico,03/14/20,41
+Mexico,03/15/20,53
+Mexico,03/16/20,82
+Mexico,03/17/20,93
+Mexico,03/18/20,118
+Mexico,03/19/20,164
+Mexico,03/20/20,203
+Mexico,03/21/20,251
+Mexico,03/22/20,316
+Mexico,03/23/20,367
+Mexico,03/24/20,405
+Mexico,03/25/20,475
+Mexico,03/26/20,585
+Mexico,03/27/20,717
+Mexico,03/28/20,848
+Mexico,03/29/20,993
+Mexico,03/30/20,1094
+Mexico,03/31/20,1215
+Mexico,04/01/20,1378
+Mexico,04/02/20,1510
+Mexico,04/03/20,1688
+Mexico,04/04/20,1890
+Mexico,04/05/20,2143
+Mexico,04/06/20,2439
+Mexico,04/07/20,2785
+Mexico,04/08/20,3181
+Mexico,04/09/20,3441
+Mexico,04/10/20,3844
+Mexico,04/11/20,4219
+Mexico,04/12/20,4661
+Mexico,04/13/20,5014
+Mexico,04/14/20,5399
+Mexico,04/15/20,5847
+Mexico,04/16/20,6297
+Mexico,04/17/20,6875
+Mexico,04/18/20,7497
+Mexico,04/19/20,8261
+Mexico,04/20/20,8772
+Mexico,04/21/20,9501
+Mexico,04/22/20,10544
+Mexico,04/23/20,11633
+Mexico,04/24/20,12872
+Mexico,04/25/20,13842
+Mexico,04/26/20,14677
+Mexico,04/27/20,15529
+Mexico,04/28/20,16752
+Mexico,04/29/20,17799
+Mexico,04/30/20,19224
+Mexico,05/01/20,20739
+Mexico,05/02/20,22088
+Mexico,05/03/20,23471
+Mexico,05/04/20,24905
+Mexico,05/05/20,26025
+Mexico,05/06/20,27634
+Mexico,05/07/20,29616
+Mexico,05/08/20,31522
+Mexico,05/09/20,33460
+Mexico,05/10/20,35022
+Mexico,05/11/20,36327
+Mexico,05/12/20,38324
+Mexico,05/13/20,40186
+Mexico,05/14/20,42595
+Mexico,05/15/20,45032
+Mexico,05/16/20,47144
+Mexico,05/17/20,49219
+Mexico,05/18/20,51633
+Mexico,05/19/20,54346
+Mexico,05/20/20,56594
+Mexico,05/21/20,59567
+Mexico,05/22/20,62527
+Mexico,05/23/20,65856
+Mexico,05/24/20,68620
+Mexico,05/25/20,71105
+Mexico,05/26/20,74560
+Mexico,05/27/20,78023
+Mexico,05/28/20,81400
+Mexico,05/29/20,84627
+Mexico,05/30/20,87512
+Mexico,05/31/20,90664
+Mexico,06/01/20,93435
+Mexico,06/02/20,97326
+Mexico,06/03/20,101238
+Mexico,06/04/20,105680
+Mexico,06/05/20,110026
+Mexico,06/06/20,113619
+Mexico,06/07/20,117103
+Mexico,06/08/20,120102
+Mexico,06/09/20,124301
+Mexico,06/10/20,129184
+Mexico,06/11/20,133974
+Mexico,06/12/20,139196
+Mexico,06/13/20,142690
+Mexico,06/14/20,146837
+Mexico,06/15/20,150264
+Mexico,06/16/20,154863
+Mexico,06/17/20,159793
+Mexico,06/18/20,165455
+Mexico,06/19/20,170485
+Mexico,06/20/20,175202
+Mexico,06/21/20,180545
+Mexico,06/22/20,185122
+Mexico,06/23/20,191410
+Mexico,06/24/20,196847
+Mexico,06/25/20,202951
+Mexico,06/26/20,208392
+Mexico,06/27/20,212802
+Mexico,06/28/20,216852
+Mexico,06/29/20,220657
+Mexico,06/30/20,226089
+Mexico,07/01/20,231770
+Mexico,07/02/20,238511
+Mexico,07/03/20,245251
+Mexico,07/04/20,252165
+Mexico,07/05/20,256848
+Mexico,07/06/20,261750
+Mexico,07/07/20,268008
+Mexico,07/08/20,275003
+Mexico,07/09/20,282283
+Mexico,07/10/20,289174
+Mexico,07/11/20,295268
+Mexico,07/12/20,299750
+Mexico,07/13/20,304435
+Mexico,07/14/20,311486
+Mexico,07/15/20,317635
+Mexico,07/16/20,324041
+Mexico,07/17/20,331298
+Mexico,07/18/20,338913
+Mexico,07/19/20,344224
+Mexico,07/20/20,349396
+Mexico,07/21/20,356255
+Mexico,07/22/20,362274
+Mexico,07/23/20,370712
+Mexico,07/24/20,378285
+Mexico,07/25/20,385036
+Mexico,07/26/20,390516
+Mexico,07/27/20,395489
+Peru,01/22/20,0
+Peru,01/23/20,0
+Peru,01/24/20,0
+Peru,01/25/20,0
+Peru,01/26/20,0
+Peru,01/27/20,0
+Peru,01/28/20,0
+Peru,01/29/20,0
+Peru,01/30/20,0
+Peru,01/31/20,0
+Peru,02/01/20,0
+Peru,02/02/20,0
+Peru,02/03/20,0
+Peru,02/04/20,0
+Peru,02/05/20,0
+Peru,02/06/20,0
+Peru,02/07/20,0
+Peru,02/08/20,0
+Peru,02/09/20,0
+Peru,02/10/20,0
+Peru,02/11/20,0
+Peru,02/12/20,0
+Peru,02/13/20,0
+Peru,02/14/20,0
+Peru,02/15/20,0
+Peru,02/16/20,0
+Peru,02/17/20,0
+Peru,02/18/20,0
+Peru,02/19/20,0
+Peru,02/20/20,0
+Peru,02/21/20,0
+Peru,02/22/20,0
+Peru,02/23/20,0
+Peru,02/24/20,0
+Peru,02/25/20,0
+Peru,02/26/20,0
+Peru,02/27/20,0
+Peru,02/28/20,0
+Peru,02/29/20,0
+Peru,03/01/20,0
+Peru,03/02/20,0
+Peru,03/03/20,0
+Peru,03/04/20,0
+Peru,03/05/20,0
+Peru,03/06/20,1
+Peru,03/07/20,1
+Peru,03/08/20,6
+Peru,03/09/20,7
+Peru,03/10/20,11
+Peru,03/11/20,11
+Peru,03/12/20,15
+Peru,03/13/20,28
+Peru,03/14/20,38
+Peru,03/15/20,43
+Peru,03/16/20,86
+Peru,03/17/20,117
+Peru,03/18/20,145
+Peru,03/19/20,234
+Peru,03/20/20,234
+Peru,03/21/20,318
+Peru,03/22/20,363
+Peru,03/23/20,395
+Peru,03/24/20,416
+Peru,03/25/20,480
+Peru,03/26/20,580
+Peru,03/27/20,635
+Peru,03/28/20,671
+Peru,03/29/20,852
+Peru,03/30/20,950
+Peru,03/31/20,1065
+Peru,04/01/20,1323
+Peru,04/02/20,1414
+Peru,04/03/20,1595
+Peru,04/04/20,1746
+Peru,04/05/20,2281
+Peru,04/06/20,2561
+Peru,04/07/20,2954
+Peru,04/08/20,4342
+Peru,04/09/20,5256
+Peru,04/10/20,5897
+Peru,04/11/20,6848
+Peru,04/12/20,7519
+Peru,04/13/20,9784
+Peru,04/14/20,10303
+Peru,04/15/20,11475
+Peru,04/16/20,12491
+Peru,04/17/20,13489
+Peru,04/18/20,14420
+Peru,04/19/20,15628
+Peru,04/20/20,16325
+Peru,04/21/20,17837
+Peru,04/22/20,19250
+Peru,04/23/20,20914
+Peru,04/24/20,21648
+Peru,04/25/20,25331
+Peru,04/26/20,27517
+Peru,04/27/20,28699
+Peru,04/28/20,31190
+Peru,04/29/20,33931
+Peru,04/30/20,36976
+Peru,05/01/20,40459
+Peru,05/02/20,42534
+Peru,05/03/20,45928
+Peru,05/04/20,47372
+Peru,05/05/20,51189
+Peru,05/06/20,54817
+Peru,05/07/20,58526
+Peru,05/08/20,61847
+Peru,05/09/20,65015
+Peru,05/10/20,67307
+Peru,05/11/20,68822
+Peru,05/12/20,72059
+Peru,05/13/20,76306
+Peru,05/14/20,80604
+Peru,05/15/20,84495
+Peru,05/16/20,88541
+Peru,05/17/20,92273
+Peru,05/18/20,94933
+Peru,05/19/20,99483
+Peru,05/20/20,104020
+Peru,05/21/20,108769
+Peru,05/22/20,111698
+Peru,05/23/20,115754
+Peru,05/24/20,119959
+Peru,05/25/20,123979
+Peru,05/26/20,129751
+Peru,05/27/20,135905
+Peru,05/28/20,141779
+Peru,05/29/20,148285
+Peru,05/30/20,155671
+Peru,05/31/20,164476
+Peru,06/01/20,170039
+Peru,06/02/20,178165
+Peru,06/03/20,178914
+Peru,06/04/20,183198
+Peru,06/05/20,187400
+Peru,06/06/20,191758
+Peru,06/07/20,196515
+Peru,06/08/20,199696
+Peru,06/09/20,203736
+Peru,06/10/20,208823
+Peru,06/11/20,214788
+Peru,06/12/20,214788
+Peru,06/13/20,220749
+Peru,06/14/20,229736
+Peru,06/15/20,232992
+Peru,06/16/20,237156
+Peru,06/17/20,240908
+Peru,06/18/20,244388
+Peru,06/19/20,247925
+Peru,06/20/20,251338
+Peru,06/21/20,254936
+Peru,06/22/20,257447
+Peru,06/23/20,260810
+Peru,06/24/20,264689
+Peru,06/25/20,268602
+Peru,06/26/20,272364
+Peru,06/27/20,275989
+Peru,06/28/20,279419
+Peru,06/29/20,282365
+Peru,06/30/20,285213
+Peru,07/01/20,288477
+Peru,07/02/20,292004
+Peru,07/03/20,295599
+Peru,07/04/20,299080
+Peru,07/05/20,302718
+Peru,07/06/20,305703
+Peru,07/07/20,309278
+Peru,07/08/20,312911
+Peru,07/09/20,316448
+Peru,07/10/20,319646
+Peru,07/11/20,322710
+Peru,07/12/20,326326
+Peru,07/13/20,330123
+Peru,07/14/20,333867
+Peru,07/15/20,337751
+Peru,07/16/20,341586
+Peru,07/17/20,345537
+Peru,07/18/20,349500
+Peru,07/19/20,353590
+Peru,07/20/20,357681
+Peru,07/21/20,362087
+Peru,07/22/20,366550
+Peru,07/23/20,371096
+Peru,07/24/20,375961
+Peru,07/25/20,375961
+Peru,07/26/20,375961
+Peru,07/27/20,389717
+Russia,01/22/20,0
+Russia,01/23/20,0
+Russia,01/24/20,0
+Russia,01/25/20,0
+Russia,01/26/20,0
+Russia,01/27/20,0
+Russia,01/28/20,0
+Russia,01/29/20,0
+Russia,01/30/20,0
+Russia,01/31/20,2
+Russia,02/01/20,2
+Russia,02/02/20,2
+Russia,02/03/20,2
+Russia,02/04/20,2
+Russia,02/05/20,2
+Russia,02/06/20,2
+Russia,02/07/20,2
+Russia,02/08/20,2
+Russia,02/09/20,2
+Russia,02/10/20,2
+Russia,02/11/20,2
+Russia,02/12/20,2
+Russia,02/13/20,2
+Russia,02/14/20,2
+Russia,02/15/20,2
+Russia,02/16/20,2
+Russia,02/17/20,2
+Russia,02/18/20,2
+Russia,02/19/20,2
+Russia,02/20/20,2
+Russia,02/21/20,2
+Russia,02/22/20,2
+Russia,02/23/20,2
+Russia,02/24/20,2
+Russia,02/25/20,2
+Russia,02/26/20,2
+Russia,02/27/20,2
+Russia,02/28/20,2
+Russia,02/29/20,2
+Russia,03/01/20,2
+Russia,03/02/20,3
+Russia,03/03/20,3
+Russia,03/04/20,3
+Russia,03/05/20,4
+Russia,03/06/20,13
+Russia,03/07/20,13
+Russia,03/08/20,17
+Russia,03/09/20,17
+Russia,03/10/20,20
+Russia,03/11/20,20
+Russia,03/12/20,28
+Russia,03/13/20,45
+Russia,03/14/20,59
+Russia,03/15/20,63
+Russia,03/16/20,90
+Russia,03/17/20,114
+Russia,03/18/20,147
+Russia,03/19/20,199
+Russia,03/20/20,253
+Russia,03/21/20,306
+Russia,03/22/20,367
+Russia,03/23/20,438
+Russia,03/24/20,495
+Russia,03/25/20,658
+Russia,03/26/20,840
+Russia,03/27/20,1036
+Russia,03/28/20,1264
+Russia,03/29/20,1534
+Russia,03/30/20,1836
+Russia,03/31/20,2337
+Russia,04/01/20,2777
+Russia,04/02/20,3548
+Russia,04/03/20,4149
+Russia,04/04/20,4731
+Russia,04/05/20,5389
+Russia,04/06/20,6343
+Russia,04/07/20,7497
+Russia,04/08/20,8672
+Russia,04/09/20,10131
+Russia,04/10/20,11917
+Russia,04/11/20,13584
+Russia,04/12/20,15770
+Russia,04/13/20,18328
+Russia,04/14/20,21102
+Russia,04/15/20,24490
+Russia,04/16/20,27938
+Russia,04/17/20,32008
+Russia,04/18/20,36793
+Russia,04/19/20,42853
+Russia,04/20/20,47121
+Russia,04/21/20,52763
+Russia,04/22/20,57999
+Russia,04/23/20,62773
+Russia,04/24/20,68622
+Russia,04/25/20,74588
+Russia,04/26/20,80949
+Russia,04/27/20,87147
+Russia,04/28/20,93558
+Russia,04/29/20,99399
+Russia,04/30/20,106498
+Russia,05/01/20,114431
+Russia,05/02/20,124054
+Russia,05/03/20,134687
+Russia,05/04/20,145268
+Russia,05/05/20,155370
+Russia,05/06/20,165929
+Russia,05/07/20,177160
+Russia,05/08/20,187859
+Russia,05/09/20,198676
+Russia,05/10/20,209688
+Russia,05/11/20,221344
+Russia,05/12/20,232243
+Russia,05/13/20,242271
+Russia,05/14/20,252245
+Russia,05/15/20,262843
+Russia,05/16/20,272043
+Russia,05/17/20,281752
+Russia,05/18/20,290678
+Russia,05/19/20,299941
+Russia,05/20/20,308705
+Russia,05/21/20,317554
+Russia,05/22/20,326448
+Russia,05/23/20,335882
+Russia,05/24/20,344481
+Russia,05/25/20,353427
+Russia,05/26/20,362342
+Russia,05/27/20,370680
+Russia,05/28/20,379051
+Russia,05/29/20,387623
+Russia,05/30/20,396575
+Russia,05/31/20,405843
+Russia,06/01/20,414328
+Russia,06/02/20,423186
+Russia,06/03/20,431715
+Russia,06/04/20,440538
+Russia,06/05/20,449256
+Russia,06/06/20,458102
+Russia,06/07/20,467073
+Russia,06/08/20,476043
+Russia,06/09/20,484630
+Russia,06/10/20,493023
+Russia,06/11/20,501800
+Russia,06/12/20,510761
+Russia,06/13/20,519458
+Russia,06/14/20,528267
+Russia,06/15/20,536484
+Russia,06/16/20,544725
+Russia,06/17/20,552549
+Russia,06/18/20,560321
+Russia,06/19/20,568292
+Russia,06/20/20,576162
+Russia,06/21/20,583879
+Russia,06/22/20,591465
+Russia,06/23/20,598878
+Russia,06/24/20,606043
+Russia,06/25/20,613148
+Russia,06/26/20,619936
+Russia,06/27/20,626779
+Russia,06/28/20,633563
+Russia,06/29/20,640246
+Russia,06/30/20,646929
+Russia,07/01/20,653479
+Russia,07/02/20,660231
+Russia,07/03/20,666941
+Russia,07/04/20,673564
+Russia,07/05/20,680283
+Russia,07/06/20,686852
+Russia,07/07/20,693215
+Russia,07/08/20,699749
+Russia,07/09/20,706240
+Russia,07/10/20,712863
+Russia,07/11/20,719449
+Russia,07/12/20,726036
+Russia,07/13/20,732547
+Russia,07/14/20,738787
+Russia,07/15/20,745197
+Russia,07/16/20,751612
+Russia,07/17/20,758001
+Russia,07/18/20,764215
+Russia,07/19/20,770311
+Russia,07/20/20,776212
+Russia,07/21/20,782040
+Russia,07/22/20,787890
+Russia,07/23/20,793720
+Russia,07/24/20,799499
+Russia,07/25/20,805332
+Russia,07/26/20,811073
+Russia,07/27/20,816680
+South Africa,01/22/20,0
+South Africa,01/23/20,0
+South Africa,01/24/20,0
+South Africa,01/25/20,0
+South Africa,01/26/20,0
+South Africa,01/27/20,0
+South Africa,01/28/20,0
+South Africa,01/29/20,0
+South Africa,01/30/20,0
+South Africa,01/31/20,0
+South Africa,02/01/20,0
+South Africa,02/02/20,0
+South Africa,02/03/20,0
+South Africa,02/04/20,0
+South Africa,02/05/20,0
+South Africa,02/06/20,0
+South Africa,02/07/20,0
+South Africa,02/08/20,0
+South Africa,02/09/20,0
+South Africa,02/10/20,0
+South Africa,02/11/20,0
+South Africa,02/12/20,0
+South Africa,02/13/20,0
+South Africa,02/14/20,0
+South Africa,02/15/20,0
+South Africa,02/16/20,0
+South Africa,02/17/20,0
+South Africa,02/18/20,0
+South Africa,02/19/20,0
+South Africa,02/20/20,0
+South Africa,02/21/20,0
+South Africa,02/22/20,0
+South Africa,02/23/20,0
+South Africa,02/24/20,0
+South Africa,02/25/20,0
+South Africa,02/26/20,0
+South Africa,02/27/20,0
+South Africa,02/28/20,0
+South Africa,02/29/20,0
+South Africa,03/01/20,0
+South Africa,03/02/20,0
+South Africa,03/03/20,0
+South Africa,03/04/20,0
+South Africa,03/05/20,1
+South Africa,03/06/20,1
+South Africa,03/07/20,1
+South Africa,03/08/20,3
+South Africa,03/09/20,3
+South Africa,03/10/20,7
+South Africa,03/11/20,13
+South Africa,03/12/20,17
+South Africa,03/13/20,24
+South Africa,03/14/20,38
+South Africa,03/15/20,51
+South Africa,03/16/20,62
+South Africa,03/17/20,62
+South Africa,03/18/20,116
+South Africa,03/19/20,150
+South Africa,03/20/20,202
+South Africa,03/21/20,240
+South Africa,03/22/20,274
+South Africa,03/23/20,402
+South Africa,03/24/20,554
+South Africa,03/25/20,709
+South Africa,03/26/20,927
+South Africa,03/27/20,1170
+South Africa,03/28/20,1187
+South Africa,03/29/20,1280
+South Africa,03/30/20,1326
+South Africa,03/31/20,1353
+South Africa,04/01/20,1380
+South Africa,04/02/20,1462
+South Africa,04/03/20,1505
+South Africa,04/04/20,1585
+South Africa,04/05/20,1655
+South Africa,04/06/20,1686
+South Africa,04/07/20,1749
+South Africa,04/08/20,1845
+South Africa,04/09/20,1934
+South Africa,04/10/20,2003
+South Africa,04/11/20,2028
+South Africa,04/12/20,2173
+South Africa,04/13/20,2272
+South Africa,04/14/20,2415
+South Africa,04/15/20,2506
+South Africa,04/16/20,2605
+South Africa,04/17/20,2783
+South Africa,04/18/20,3034
+South Africa,04/19/20,3158
+South Africa,04/20/20,3300
+South Africa,04/21/20,3465
+South Africa,04/22/20,3635
+South Africa,04/23/20,3953
+South Africa,04/24/20,4220
+South Africa,04/25/20,4361
+South Africa,04/26/20,4546
+South Africa,04/27/20,4793
+South Africa,04/28/20,4996
+South Africa,04/29/20,5350
+South Africa,04/30/20,5647
+South Africa,05/01/20,5951
+South Africa,05/02/20,6336
+South Africa,05/03/20,6783
+South Africa,05/04/20,7220
+South Africa,05/05/20,7572
+South Africa,05/06/20,7808
+South Africa,05/07/20,8232
+South Africa,05/08/20,8895
+South Africa,05/09/20,9420
+South Africa,05/10/20,10015
+South Africa,05/11/20,10652
+South Africa,05/12/20,11350
+South Africa,05/13/20,12074
+South Africa,05/14/20,12739
+South Africa,05/15/20,13524
+South Africa,05/16/20,14355
+South Africa,05/17/20,15515
+South Africa,05/18/20,16433
+South Africa,05/19/20,17200
+South Africa,05/20/20,18003
+South Africa,05/21/20,19137
+South Africa,05/22/20,20125
+South Africa,05/23/20,21343
+South Africa,05/24/20,22583
+South Africa,05/25/20,23615
+South Africa,05/26/20,24264
+South Africa,05/27/20,25937
+South Africa,05/28/20,27403
+South Africa,05/29/20,29240
+South Africa,05/30/20,30967
+South Africa,05/31/20,32683
+South Africa,06/01/20,34357
+South Africa,06/02/20,35812
+South Africa,06/03/20,37525
+South Africa,06/04/20,40792
+South Africa,06/05/20,43434
+South Africa,06/06/20,45973
+South Africa,06/07/20,48285
+South Africa,06/08/20,50879
+South Africa,06/09/20,52991
+South Africa,06/10/20,55421
+South Africa,06/11/20,58568
+South Africa,06/12/20,61927
+South Africa,06/13/20,65736
+South Africa,06/14/20,70038
+South Africa,06/15/20,73533
+South Africa,06/16/20,76334
+South Africa,06/17/20,80412
+South Africa,06/18/20,83890
+South Africa,06/19/20,87715
+South Africa,06/20/20,92681
+South Africa,06/21/20,97302
+South Africa,06/22/20,101590
+South Africa,06/23/20,106108
+South Africa,06/24/20,111796
+South Africa,06/25/20,118375
+South Africa,06/26/20,124590
+South Africa,06/27/20,131800
+South Africa,06/28/20,138134
+South Africa,06/29/20,144264
+South Africa,06/30/20,151209
+South Africa,07/01/20,159333
+South Africa,07/02/20,168061
+South Africa,07/03/20,177124
+South Africa,07/04/20,187977
+South Africa,07/05/20,196750
+South Africa,07/06/20,205721
+South Africa,07/07/20,215855
+South Africa,07/08/20,224665
+South Africa,07/09/20,238339
+South Africa,07/10/20,250687
+South Africa,07/11/20,264184
+South Africa,07/12/20,276242
+South Africa,07/13/20,287796
+South Africa,07/14/20,298292
+South Africa,07/15/20,311049
+South Africa,07/16/20,324221
+South Africa,07/17/20,337594
+South Africa,07/18/20,350879
+South Africa,07/19/20,364328
+South Africa,07/20/20,373628
+South Africa,07/21/20,381798
+South Africa,07/22/20,394948
+South Africa,07/23/20,408052
+South Africa,07/24/20,421996
+South Africa,07/25/20,434200
+South Africa,07/26/20,445433
+South Africa,07/27/20,452529
+United Kingdom,01/22/20,0
+United Kingdom,01/23/20,0
+United Kingdom,01/24/20,0
+United Kingdom,01/25/20,0
+United Kingdom,01/26/20,0
+United Kingdom,01/27/20,0
+United Kingdom,01/28/20,0
+United Kingdom,01/29/20,0
+United Kingdom,01/30/20,0
+United Kingdom,01/31/20,2
+United Kingdom,02/01/20,2
+United Kingdom,02/02/20,2
+United Kingdom,02/03/20,8
+United Kingdom,02/04/20,8
+United Kingdom,02/05/20,9
+United Kingdom,02/06/20,9
+United Kingdom,02/07/20,9
+United Kingdom,02/08/20,13
+United Kingdom,02/09/20,14
+United Kingdom,02/10/20,14
+United Kingdom,02/11/20,15
+United Kingdom,02/12/20,16
+United Kingdom,02/13/20,17
+United Kingdom,02/14/20,18
+United Kingdom,02/15/20,18
+United Kingdom,02/16/20,18
+United Kingdom,02/17/20,19
+United Kingdom,02/18/20,19
+United Kingdom,02/19/20,20
+United Kingdom,02/20/20,22
+United Kingdom,02/21/20,23
+United Kingdom,02/22/20,23
+United Kingdom,02/23/20,28
+United Kingdom,02/24/20,30
+United Kingdom,02/25/20,34
+United Kingdom,02/26/20,37
+United Kingdom,02/27/20,44
+United Kingdom,02/28/20,56
+United Kingdom,02/29/20,61
+United Kingdom,03/01/20,94
+United Kingdom,03/02/20,134
+United Kingdom,03/03/20,189
+United Kingdom,03/04/20,246
+United Kingdom,03/05/20,295
+United Kingdom,03/06/20,374
+United Kingdom,03/07/20,429
+United Kingdom,03/08/20,483
+United Kingdom,03/09/20,630
+United Kingdom,03/10/20,889
+United Kingdom,03/11/20,1301
+United Kingdom,03/12/20,1790
+United Kingdom,03/13/20,2270
+United Kingdom,03/14/20,2634
+United Kingdom,03/15/20,3077
+United Kingdom,03/16/20,3692
+United Kingdom,03/17/20,4462
+United Kingdom,03/18/20,5467
+United Kingdom,03/19/20,6533
+United Kingdom,03/20/20,7791
+United Kingdom,03/21/20,9006
+United Kingdom,03/22/20,10395
+United Kingdom,03/23/20,12744
+United Kingdom,03/24/20,15126
+United Kingdom,03/25/20,17843
+United Kingdom,03/26/20,20970
+United Kingdom,03/27/20,24219
+United Kingdom,03/28/20,27062
+United Kingdom,03/29/20,29954
+United Kingdom,03/30/20,34281
+United Kingdom,03/31/20,38815
+United Kingdom,04/01/20,43789
+United Kingdom,04/02/20,48718
+United Kingdom,04/03/20,53699
+United Kingdom,04/04/20,57772
+United Kingdom,04/05/20,61422
+United Kingdom,04/06/20,66738
+United Kingdom,04/07/20,72224
+United Kingdom,04/08/20,77387
+United Kingdom,04/09/20,82293
+United Kingdom,04/10/20,86660
+United Kingdom,04/11/20,90273
+United Kingdom,04/12/20,93812
+United Kingdom,04/13/20,98017
+United Kingdom,04/14/20,102365
+United Kingdom,04/15/20,107465
+United Kingdom,04/16/20,112808
+United Kingdom,04/17/20,117798
+United Kingdom,04/18/20,122534
+United Kingdom,04/19/20,126394
+United Kingdom,04/20/20,131260
+United Kingdom,04/21/20,136035
+United Kingdom,04/22/20,141540
+United Kingdom,04/23/20,146708
+United Kingdom,04/24/20,151689
+United Kingdom,04/25/20,155453
+United Kingdom,04/26/20,158926
+United Kingdom,04/27/20,163630
+United Kingdom,04/28/20,168357
+United Kingdom,04/29/20,173807
+United Kingdom,04/30/20,178771
+United Kingdom,05/01/20,183501
+United Kingdom,05/02/20,186731
+United Kingdom,05/03/20,189708
+United Kingdom,05/04/20,193091
+United Kingdom,05/05/20,196780
+United Kingdom,05/06/20,200616
+United Kingdom,05/07/20,204387
+United Kingdom,05/08/20,207439
+United Kingdom,05/09/20,209589
+United Kingdom,05/10/20,211911
+United Kingdom,05/11/20,215500
+United Kingdom,05/12/20,218895
+United Kingdom,05/13/20,222195
+United Kingdom,05/14/20,224813
+United Kingdom,05/15/20,227334
+United Kingdom,05/16/20,229406
+United Kingdom,05/17/20,231232
+United Kingdom,05/18/20,233809
+United Kingdom,05/19/20,236867
+United Kingdom,05/20/20,239579
+United Kingdom,05/21/20,242133
+United Kingdom,05/22/20,244174
+United Kingdom,05/23/20,245682
+United Kingdom,05/24/20,247037
+United Kingdom,05/25/20,248650
+United Kingdom,05/26/20,250309
+United Kingdom,05/27/20,252118
+United Kingdom,05/28/20,253854
+United Kingdom,05/29/20,255362
+United Kingdom,05/30/20,256469
+United Kingdom,05/31/20,257539
+United Kingdom,06/01/20,258983
+United Kingdom,06/02/20,260453
+United Kingdom,06/03/20,261802
+United Kingdom,06/04/20,263040
+United Kingdom,06/05/20,264150
+United Kingdom,06/06/20,264944
+United Kingdom,06/07/20,265662
+United Kingdom,06/08/20,266756
+United Kingdom,06/09/20,267915
+United Kingdom,06/10/20,269101
+United Kingdom,06/11/20,270108
+United Kingdom,06/12/20,271162
+United Kingdom,06/13/20,272050
+United Kingdom,06/14/20,272857
+United Kingdom,06/15/20,273888
+United Kingdom,06/16/20,274971
+United Kingdom,06/17/20,275970
+United Kingdom,06/18/20,276990
+United Kingdom,06/19/20,277974
+United Kingdom,06/20/20,278640
+United Kingdom,06/21/20,279264
+United Kingdom,06/22/20,280156
+United Kingdom,06/23/20,281038
+United Kingdom,06/24/20,281815
+United Kingdom,06/25/20,282512
+United Kingdom,06/26/20,283151
+United Kingdom,06/27/20,283785
+United Kingdom,06/28/20,284192
+United Kingdom,06/29/20,284812
+United Kingdom,06/30/20,285216
+United Kingdom,07/01/20,285279
+United Kingdom,07/02/20,285285
+United Kingdom,07/03/20,285787
+United Kingdom,07/04/20,286412
+United Kingdom,07/05/20,286931
+United Kingdom,07/06/20,287290
+United Kingdom,07/07/20,287874
+United Kingdom,07/08/20,288511
+United Kingdom,07/09/20,289154
+United Kingdom,07/10/20,289678
+United Kingdom,07/11/20,290504
+United Kingdom,07/12/20,291154
+United Kingdom,07/13/20,291691
+United Kingdom,07/14/20,292931
+United Kingdom,07/15/20,293469
+United Kingdom,07/16/20,294116
+United Kingdom,07/17/20,294803
+United Kingdom,07/18/20,295632
+United Kingdom,07/19/20,296358
+United Kingdom,07/20/20,296944
+United Kingdom,07/21/20,297389
+United Kingdom,07/22/20,297952
+United Kingdom,07/23/20,298731
+United Kingdom,07/24/20,299500
+United Kingdom,07/25/20,300270
+United Kingdom,07/26/20,301020
+United Kingdom,07/27/20,301708
+US,01/22/20,1
+US,01/23/20,1
+US,01/24/20,2
+US,01/25/20,2
+US,01/26/20,5
+US,01/27/20,5
+US,01/28/20,5
+US,01/29/20,5
+US,01/30/20,5
+US,01/31/20,7
+US,02/01/20,8
+US,02/02/20,8
+US,02/03/20,11
+US,02/04/20,11
+US,02/05/20,11
+US,02/06/20,11
+US,02/07/20,11
+US,02/08/20,11
+US,02/09/20,11
+US,02/10/20,11
+US,02/11/20,12
+US,02/12/20,12
+US,02/13/20,13
+US,02/14/20,13
+US,02/15/20,13
+US,02/16/20,13
+US,02/17/20,13
+US,02/18/20,13
+US,02/19/20,13
+US,02/20/20,13
+US,02/21/20,15
+US,02/22/20,15
+US,02/23/20,15
+US,02/24/20,15
+US,02/25/20,15
+US,02/26/20,15
+US,02/27/20,16
+US,02/28/20,16
+US,02/29/20,24
+US,03/01/20,30
+US,03/02/20,53
+US,03/03/20,73
+US,03/04/20,104
+US,03/05/20,174
+US,03/06/20,222
+US,03/07/20,337
+US,03/08/20,451
+US,03/09/20,519
+US,03/10/20,711
+US,03/11/20,1109
+US,03/12/20,1561
+US,03/13/20,2157
+US,03/14/20,2870
+US,03/15/20,2968
+US,03/16/20,4360
+US,03/17/20,6141
+US,03/18/20,8917
+US,03/19/20,14157
+US,03/20/20,19479
+US,03/21/20,25825
+US,03/22/20,33761
+US,03/23/20,43850
+US,03/24/20,54112
+US,03/25/20,66055
+US,03/26/20,84091
+US,03/27/20,102276
+US,03/28/20,122069
+US,03/29/20,141205
+US,03/30/20,162707
+US,03/31/20,188724
+US,04/01/20,214205
+US,04/02/20,244610
+US,04/03/20,276547
+US,04/04/20,309699
+US,04/05/20,337573
+US,04/06/20,367215
+US,04/07/20,397992
+US,04/08/20,429686
+US,04/09/20,464442
+US,04/10/20,497943
+US,04/11/20,527969
+US,04/12/20,556522
+US,04/13/20,581813
+US,04/14/20,608878
+US,04/15/20,637974
+US,04/16/20,669272
+US,04/17/20,701996
+US,04/18/20,730337
+US,04/19/20,756375
+US,04/20/20,783716
+US,04/21/20,809318
+US,04/22/20,837422
+US,04/23/20,871617
+US,04/24/20,907908
+US,04/25/20,940829
+US,04/26/20,968518
+US,04/27/20,990983
+US,04/28/20,1015518
+US,04/29/20,1043038
+US,04/30/20,1072667
+US,05/01/20,1106829
+US,05/02/20,1136024
+US,05/03/20,1161611
+US,05/04/20,1184086
+US,05/05/20,1208271
+US,05/06/20,1233527
+US,05/07/20,1261409
+US,05/08/20,1288587
+US,05/09/20,1314320
+US,05/10/20,1334084
+US,05/11/20,1352962
+US,05/12/20,1375152
+US,05/13/20,1396110
+US,05/14/20,1423727
+US,05/15/20,1449027
+US,05/16/20,1474128
+US,05/17/20,1493132
+US,05/18/20,1514901
+US,05/19/20,1535350
+US,05/20/20,1559157
+US,05/21/20,1584512
+US,05/22/20,1608653
+US,05/23/20,1630476
+US,05/24/20,1651289
+US,05/25/20,1670280
+US,05/26/20,1689163
+US,05/27/20,1707445
+US,05/28/20,1730260
+US,05/29/20,1754764
+US,05/30/20,1779214
+US,05/31/20,1799124
+US,06/01/20,1816479
+US,06/02/20,1837374
+US,06/03/20,1857332
+US,06/04/20,1878683
+US,06/05/20,1903907
+US,06/06/20,1926639
+US,06/07/20,1944370
+US,06/08/20,1961785
+US,06/09/20,1979912
+US,06/10/20,2000706
+US,06/11/20,2023656
+US,06/12/20,2048986
+US,06/13/20,2074542
+US,06/14/20,2094366
+US,06/15/20,2114026
+US,06/16/20,2137731
+US,06/17/20,2163290
+US,06/18/20,2191099
+US,06/19/20,2222579
+US,06/20/20,2255328
+US,06/21/20,2281767
+US,06/22/20,2312303
+US,06/23/20,2347491
+US,06/24/20,2382426
+US,06/25/20,2422299
+US,06/26/20,2467554
+US,06/27/20,2510259
+US,06/28/20,2549864
+US,06/29/20,2590668
+US,06/30/20,2636414
+US,07/01/20,2687588
+US,07/02/20,2742049
+US,07/03/20,2795361
+US,07/04/20,2841241
+US,07/05/20,2891124
+US,07/06/20,2936077
+US,07/07/20,2996098
+US,07/08/20,3054699
+US,07/09/20,3117946
+US,07/10/20,3185737
+US,07/11/20,3245925
+US,07/12/20,3304942
+US,07/13/20,3364157
+US,07/14/20,3431574
+US,07/15/20,3498902
+US,07/16/20,3576157
+US,07/17/20,3647715
+US,07/18/20,3711413
+US,07/19/20,3773260
+US,07/20/20,3834677
+US,07/21/20,3899211
+US,07/22/20,3970121
+US,07/23/20,4038816
+US,07/24/20,4112531
+US,07/25/20,4178970
+US,07/26/20,4233923
+US,07/27/20,4290259
