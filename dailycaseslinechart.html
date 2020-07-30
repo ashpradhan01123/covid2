@@ -285,9 +285,11 @@ function createToolTip() {
       //  console.log("PageX:"+event.pageX);
         toolTip.html(formatTime(sortingObj[0].date) + "(Cases123: " + formatCases(sortingObj[0].cases) + ')')
           .style('display', 'block')
-          .style('left', event.pageX+'px')
-          .style('top', event.pageY +'px' )
-          .style('font-size', 10+'px')
+         // .style('left', event.pageX+'px')
+        //  .style('top', event.pageY +'px' )
+            .style('left', '1150px')
+          .style('top', '400px' )
+          .style('font-size', '10px')
           .selectAll()
           .data(nested1).enter() // for each vehicle category, list out name and price of premium
           .append('div')
