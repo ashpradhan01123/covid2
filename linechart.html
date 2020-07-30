@@ -14,7 +14,12 @@ const svg = d3.select('svg');
 
 const width = +svg.attr('width');
 const height = +svg.attr('height');
-
+  
+  const margin = { top: 60, right: 160, bottom: 88, left: 105 };
+  const innerWidth = width - margin.left - margin.right;
+  const innerHeight = height - margin.top - margin.bottom;
+  
+var nested;
 var lineOpacity = 1;
 var lineStroke = '2px';
 
@@ -24,18 +29,14 @@ const render = data => {
   const title = 'Covid Cases of Top 10 Countries as of July 28';
   
   const xValue = d => d.date;
-  const xAxisLabel = 'Time';
+  const xAxisLabel = 'Date';
   
   const yValue = d => d.cases;
   const circleRadius = 6;
-  const yAxisLabel = 'Temperature';
+  const yAxisLabel = 'Cases';
   
   const colorValue = d => d.country;
-  
-  const margin = { top: 60, right: 160, bottom: 88, left: 105 };
-  const innerWidth = width - margin.left - margin.right;
-  const innerHeight = height - margin.top - margin.bottom;
-  
+
   
       
 const colorLegend = (selection, props) => {
@@ -125,26 +126,27 @@ const colorLegend = (selection, props) => {
     .x(d => xScale(xValue(d)))
     .y(d => yScale(yValue(d)))
     .curve(d3.curveBasis);
-  
+  //console.log(yValue);
   const lastYValue = d =>
     yValue(d.values[d.values.length - 1]);
   
-  const nested = d3.nest()
+ nested = d3.nest()
     .key(colorValue)
     .entries(data)
     .sort((a, b) =>
       d3.descending(lastYValue(a), lastYValue(b))
     );
   
-  console.log(nested);
+  //console.log(nested);
   
   colorScale.domain(nested.map(d => d.key));
-  
+
  var path = g.selectAll('.line-path').data(nested)
     .enter().append('path')
       .attr('class', 'line-path')
       .attr('d', d => lineGenerator(d.values))
-      .attr('stroke', d => colorScale(d.key));
+      .attr('stroke', d => colorScale(d.key))
+	;
   
   var totalLength = path.node().getTotalLength();
   
@@ -153,34 +155,36 @@ const colorLegend = (selection, props) => {
 		.attr("stroke-dashoffset", totalLength)
 	.transition() // Call Transition Method
 		.duration(6000) // Set Duration timing (ms)
-		.ease(d3.easeLinear) // Set Easing option
+		.ease(d3.easeQuadOut) // Set Easing option
 		.attr("stroke-dashoffset", 0); // Set final value of dash-offset for transition
-  
-  
-      
-  
-  g.append('text')
+    g.append('text')
       .attr('class', 'title')
       .attr('y', -10)
       .text(title);
   
   svg.append('g')
-    .attr('transform', `translate(790,121)`)
+    .attr('transform', `translate(850,121)`)
     .call(colorLegend, {
       colorScale,
-      circleRadius: 13,
+      circleRadius: 6,
       spacing: 30,
       textOffset: 15
     });
-  
+ 
+toolTip();
+}
+
+function toolTip() {
+
    tooltip = d3.select("#chart").append("div")
             .attr('id', 'tooltip')
-            .style('position', 'absolute')
-            .style("background-color", "#D3D3D3")
+	    .style('position', 'absolute')
+            .style("background-color", "white")
             .style('padding', 6)
-            .style('display', 'none');
+          //  .style('display', 'none');
    mouseG = svg.append("g")
-            .attr("class", "mouse-over-effects");
+            .attr("class", "mouse-over-effects")
+	    .attr('transform', `translate(${margin.left},${margin.top})`);
   
   
    mouseG.append("path") // create vertical line to follow mouse
@@ -189,7 +193,7 @@ const colorLegend = (selection, props) => {
             .style("stroke-width", lineStroke)
             .style("opacity", "0");
   
- var lines = document.getElementsByClassName('line-path'); 
+   var lines = document.getElementsByClassName('line-path'); 
   
   
    var mousePerLine = mouseG.selectAll('.mouse-per-line')
@@ -208,12 +212,12 @@ const colorLegend = (selection, props) => {
   
   
    mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
-            .attr('width', width) 
-            .attr('height', height)
-            .attr('transform', `translate(${margin.left},${margin.top})`)
+            .attr('width', innerWidth) 
+            .attr('height', innerHeight)
+        //    .attr('transform', `translate(${margin.left},${margin.top})`)
             .attr('fill', 'none')
             .attr('pointer-events', 'all')
-            .on('mouseout', function () { // on mouse out hide line, circles and text
+	   .on('mouseout', function () { // on mouse out hide line, circles and text
               d3.select(".mouse-line")
                 .style("opacity", "0");
               d3.selectAll(".mouse-per-line circle")
@@ -233,7 +237,7 @@ const colorLegend = (selection, props) => {
                 .style('display', 'block')
             })
             .on('mousemove', function () { // update tooltip content, line, circles and text when mouse moves
-              var mouse = d3.mouse(this)
+              var mouse = d3.mouse(this);
 
               d3.selectAll(".mouse-per-line")
                 .attr("transform", function (d, i) {
@@ -247,8 +251,8 @@ const colorLegend = (selection, props) => {
                       data += " " + xScale(d.values[idx].date) + "," + 0;
                       return data;
                     });
-                  return "translate(" + xScale(d.values[idx].date) + "," + yScale(d.values[idx].cases) + ")";
-
+                 return "translate(" + xScale(d.values[idx].date) + "," + yScale(d.values[idx].cases) + ")";
+//return `translate(xScale(d.values[idx].date)+${margin.left}, yScale(d.values[idx].cases)+${margin.top})`;
                 });
 
               updateTooltipContent(mouse, nested)
@@ -259,7 +263,8 @@ const colorLegend = (selection, props) => {
 };   ///// render function ends
       
  function updateTooltipContent(mouse, nested) {
-
+	var formatTime = d3.timeFormat("%B %d, %Y");
+	var formatCases = d3.format(",") ;
         sortingObj = []
         nested.map(d => {
           var xDate = xScale.invert(mouse[0])
@@ -275,15 +280,15 @@ const colorLegend = (selection, props) => {
         var sortingArr = sortingObj.map(d=> d.key);
 
         var nested1 = nested.slice().sort(function(a, b){
-          return sortingArr.indexOf(a.key) - sortingArr.indexOf(b.key) // rank vehicle category based on cases
+          return sortingArr.indexOf(a.key) - sortingArr.indexOf(b.key) // rank countries based on cases
         })
-       // console.log(nested1);
+        console.log(event.pageX);
 
-        tooltip.html(sortingObj[0].date + " (Cases:" + sortingObj[0].cases + ')')
-          .style('display', 'block')
-          .style('left', d3.event.pageX + 20)
-          .style('top', d3.event.pageY - 20)
-          .style('font-size', 11.5)
+        tooltip.html(formatTime(sortingObj[0].date) + " (Cases:" + formatCases(sortingObj[0].cases) + ')')
+        //  .style('display', 'block')
+          .style('left', event.pageX)
+          .style('top', event.pageY )
+          .style('font-size', 10)
           .selectAll()
           .data(nested1).enter() // for each vehicle category, list out name and price of premium
           .append('div')
@@ -295,13 +300,11 @@ const colorLegend = (selection, props) => {
             var xDate = xScale.invert(mouse[0])
             var bisect = d3.bisector(function (d) { return d.date; }).left
             var idx = bisect(d.values, xDate)
-            console.log(d.values[idx].cases);
-            return d.key + " " + d.key + "Cases: " + d.values[idx].cases;
+            //console.log(d.values[idx].cases);
+            return d.key +  " Cases: " + formatCases(d.values[idx].cases);
           })
       }
-    
-
-d3.csv('top10.csv')
+d3.csv('http://127.0.0.1:8000/top10.csv')
   .then(data => {
     data.forEach(d => {
       d.cases = +d.cases;
@@ -309,7 +312,6 @@ d3.csv('top10.csv')
     });
     render(data);
   });
-      
 
 
 	// Set Properties of Dash Array and Dash Offset and initiate Transition
