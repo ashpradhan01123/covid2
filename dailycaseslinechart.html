@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Line Chart with Multiple Lines</title>
+    <link rel="stylesheet" href="styles.css">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <div id="chart">
+     <svg width="1280" height="720"></svg>
+    </div>
+    <script>
+const svg = d3.select('svg');
+
+const width = +svg.attr('width');
+const height = +svg.attr('height');
+  
+  const margin = { top: 60, right: 160, bottom: 88, left: 105 };
+  const innerWidth = width - margin.left - margin.right;
+  const innerHeight = height - margin.top - margin.bottom;
+  
+var nested;
+var lineOpacity = 1;
+var lineStroke = '2px';
+var toolTip;
+var xScale, yScale, coloScale;
+
+const render = data => {
+  const title = 'Covid Cases of Top 10 Countries as of July 28';
+  
+  const xValue = d => d.date;
+  const xAxisLabel = 'Date';
+  
+  const yValue = d => d.cases;
+  const circleRadius = 6;
+  const yAxisLabel = 'Cases';
+  
+  const colorValue = d => d.country;
+
+  
+      
+const colorLegend = (selection, props) => {
+  const {
+    colorScale,
+    circleRadius,
+    spacing,
+    textOffset
+  } = props;
+
+  const groups = selection.selectAll('g')
+    .data(colorScale.domain());
+  const groupsEnter = groups
+    .enter().append('g')
+      .attr('class', 'tick');
+  groupsEnter
+    .merge(groups)
+      .attr('transform', (d, i) =>
+        `translate(0, ${i * spacing})`
+      );
+  groups.exit().remove();
+
+  groupsEnter.append('circle')
+    .merge(groups.select('circle'))
+      .attr('r', circleRadius)
+      .attr('fill', colorScale);
+
+  groupsEnter.append('text')
+    .merge(groups.select('text'))
+      .text(d => d)
+      .attr('dy', '0.32em')
+      .attr('x', textOffset);
+}
+  
+  
+  
+  
+  
+   xScale = d3.scaleTime()
+    .domain(d3.extent(data, xValue))
+    .range([0, innerWidth])
+    .nice();
+  
+   yScale = d3.scaleLinear()
+    .domain(d3.extent(data, yValue))
+    .range([innerHeight, 0])
+    .nice();
+  
+  colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+  
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  const xAxis = d3.axisBottom(xScale)
+    .tickSize(-innerHeight)
+    .tickPadding(15);
+  
+  const yAxis = d3.axisLeft(yScale)
+    .tickSize(-innerWidth)
+    .tickPadding(10);
+  
+  const yAxisG = g.append('g').call(yAxis);
+  yAxisG.selectAll('.domain').remove();
+  
+  yAxisG.append('text')
+      .attr('class', 'axis-label')
+      .attr('y', -60)
+      .attr('x', -innerHeight / 2)
+      .attr('fill', 'black')
+      .attr('transform', `rotate(-90)`)
+      .attr('text-anchor', 'middle')
+      .text(yAxisLabel);
+  
+  const xAxisG = g.append('g').call(xAxis)
+    .attr('transform', `translate(0,${innerHeight})`);
+  
+  xAxisG.select('.domain').remove();
+  
+  xAxisG.append('text')
+      .attr('class', 'axis-label')
+      .attr('y', 80)
+      .attr('x', innerWidth / 2)
+      .attr('fill', 'black')
+      .text(xAxisLabel);
+  
+  const lineGenerator = d3.line()
+    .x(d => xScale(xValue(d)))
+    .y(d => yScale(yValue(d)))
+    .curve(d3.curveBasis);
+  //console.log(yValue);
+  const lastYValue = d =>
+    yValue(d.values[d.values.length - 1]);
+  
+ nested = d3.nest()
+    .key(colorValue)
+    .entries(data)
+    .sort((a, b) =>
+      d3.descending(lastYValue(a), lastYValue(b))
+    );
+  
+  //console.log(nested);
+  
+  colorScale.domain(nested.map(d => d.key));
+
+ var path = g.selectAll('.line-path').data(nested)
+    .enter().append('path')
+      .attr('class', 'line-path')
+      .attr('d', d => lineGenerator(d.values))
+      .attr('stroke', d => colorScale(d.key))
+	;
+  
+  var totalLength = path.node().getTotalLength();
+ 
+  path
+		.attr("stroke-dasharray", totalLength + " " + totalLength)
+		.attr("stroke-dashoffset", totalLength)
+	.transition() // Call Transition Method
+		.duration(1000) // Set Duration timing (ms)
+		.ease(d3.easeLinear) // Set Easing option
+		.attr("stroke-dashoffset", 0); // Set final value of dash-offset for transition
+   g.append('text')
+      .attr('class', 'title')
+      .attr('y', -10)
+      .text(title);
+  
+  svg.append('g')
+    .attr('transform', `translate(1200,121)`)
+    .call(colorLegend, {
+      colorScale,
+      circleRadius: 6,
+      spacing: 30,
+      textOffset: 15
+    });
+ 
+createToolTip();
+}
+
+function createToolTip() {
+
+   toolTip = d3.select("#chart").append("div")
+            .attr('id', 'tooltip')
+	    .style('position', 'absolute')
+            .style("background-color", "white")
+            .style('padding', 6)
+            .style('display', 'none');
+   mouseG = svg.append("g")
+            .attr("class", "mouse-over-effects")
+	    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  
+   mouseG.append("path") // create vertical line to follow mouse
+            .attr("class", "mouse-line")
+            .style("stroke", "#A9A9A9")
+            .style("stroke-width", lineStroke)
+            .style("opacity", "0");
+  
+   var lines = document.getElementsByClassName('line-path'); 
+  
+  
+   var mousePerLine = mouseG.selectAll('.mouse-per-line')
+            .data(nested)
+            .enter()
+            .append("g")
+            .attr("class", "mouse-per-line");
+  
+  
+  mousePerLine.append("circle")
+            .attr("r", 4)
+            .style("stroke", d => colorScale(d.key))
+            .style("fill", "none")
+            .style("stroke-width", lineStroke)
+            .style("opacity", "0");
+  
+  
+   mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
+            .attr('width', innerWidth) 
+            .attr('height', innerHeight)
+        //    .attr('transform', `translate(${margin.left},${margin.top})`)
+            .attr('fill', 'none')
+            .attr('pointer-events', 'all')
+	   .on('mouseout', function () { // on mouse out hide line, circles and text
+              d3.select(".mouse-line")
+                .style("opacity", "0");
+              d3.selectAll(".mouse-per-line circle")
+                .style("opacity", "0");
+              d3.selectAll(".mouse-per-line text")
+                .style("opacity", "0");
+              d3.selectAll("#tooltip")
+                .style('display', 'none')
+
+            })
+   .on('mouseover', function () { // on mouse in show line, circles and text
+              d3.select(".mouse-line")
+                .style("opacity", "1");
+              d3.selectAll(".mouse-per-line circle")
+                .style("opacity", "1");
+              d3.selectAll("#tooltip")
+                .style('display', 'block')
+            })
+            .on('mousemove', function () { // update tooltip content, line, circles and text when mouse moves
+              var mouse = d3.mouse(this);
+
+              d3.selectAll(".mouse-per-line")
+                .attr("transform", function (d, i) {
+                  var xDate = xScale.invert(mouse[0]) // use 'invert' to get date corresponding to distance from mouse position relative to svg
+                  var bisect = d3.bisector(function (d) { return d.date; }).left // retrieve row index of date on parsed csv
+                  var idx = bisect(d.values, xDate);
+
+                  d3.select(".mouse-line")
+                    .attr("d", function () {
+                      var data = "M" + xScale(d.values[idx].date) + "," + (height);
+                      data += " " + xScale(d.values[idx].date) + "," + 0;
+                      return data;
+                    });
+                 return "translate(" + xScale(d.values[idx].date) + "," + yScale(d.values[idx].cases) + ")";
+//return `translate(xScale(d.values[idx].date)+${margin.left}, yScale(d.values[idx].cases)+${margin.top})`;
+                });
+
+              updateTooltipContent(mouse, nested,toolTip)
+
+            })
+
+  
+};   ///// render function ends
+      
+ function updateTooltipContent(mouse, nested, toolTip) {
+	var formatTime = d3.timeFormat("%B %d, %Y");
+	var formatCases = d3.format(",") ;
+        sortingObj = []
+        nested.map(d => {
+          var xDate = xScale.invert(mouse[0])
+          var bisect = d3.bisector(function (d) { return d.date; }).left
+          var idx = bisect(d.values, xDate)
+          sortingObj.push({key: d.values[idx].country, cases: d.values[idx].cases, date: d.values[idx].date
+        });
+        })
+        sortingObj.sort(function(x, y){
+           return d3.descending(x.cases, y.cases);
+        })
+
+        var sortingArr = sortingObj.map(d=> d.key);
+
+        var nested1 = nested.slice().sort(function(a, b){
+          return sortingArr.indexOf(a.key) - sortingArr.indexOf(b.key) // rank countries based on cases
+        })
+      //  console.log("PageX:"+event.pageX);
+        toolTip.html(formatTime(sortingObj[0].date) + "(Cases123: " + formatCases(sortingObj[0].cases) + ')')
+          .style('display', 'block')
+          .style('left', event.pageX+'px')
+          .style('top', event.pageY +'px' )
+          .style('font-size', 10+'px')
+          .selectAll()
+          .data(nested1).enter() // for each vehicle category, list out name and price of premium
+          .append('div')
+          .style('color', d => {
+            return colorScale(d.key)
+          })
+          .style('font-size', 10)
+          .html(d => {
+            var xDate = xScale.invert(mouse[0])
+            var bisect = d3.bisector(function (d) { return d.date; }).left
+            var idx = bisect(d.values, xDate)
+            //console.log(d.values[idx].cases);
+            return d.key +  " Cases: " + formatCases(d.values[idx].cases);
+          })
+      }
+d3.csv('global_confirmed_07302020_top10.csv')
+  .then(data => {
+    data.forEach(d => {
+      d.cases = +d.total_cases;
+      d.date = new Date(d.date);
+    });
+    render(data);
+  });
+
+
+	// Set Properties of Dash Array and Dash Offset and initiate Transition
+	
+      
+      
+      
+      
+  
+    
+    </script>
+  </body>
+</html>
