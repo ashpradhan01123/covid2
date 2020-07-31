@@ -6,6 +6,19 @@
 <script src="https://d3js.org/d3.v5.min.js"></script>
   </head>
   <body>
+<div>
+<p> A brief look at the Covid Cases in the Top 10 Countries in the world and how the US fared with respect to the rest of the world. 
+</p>
+<p>
+As of July 28th, The US accounted for almost a quarter of the confirmed cases of the entire world. The chart shows when the lockdowns started for most of these countries, including India, the second largest population in the world.
+</p>
+Lockdowns were lifted in most of the US right before Memorial Day, even before the number of cases were coming down in the US and other parts of the world. Thus the number of cases increased dramatically. 
+<p></p>
+</div>
+<div>
+<button onclick="location.href = 'http://127.0.0.1:8000/linechart.html';">Total</button>
+<button onclick="location.href = 'http://127.0.0.1:8000/dailycaseslinechart.html';"">Daily </button>
+</div>
     <div id="chart">
      <svg width="960" height="500"></svg>
     </div>
@@ -15,14 +28,14 @@ const svg = d3.select('svg');
 const width = +svg.attr('width');
 const height = +svg.attr('height');
   
-  const margin = { top: 60, right: 160, bottom: 88, left: 105 };
-  const innerWidth = width - margin.left - margin.right;
-  const innerHeight = height - margin.top - margin.bottom;
+const margin = { top: 60, right: 160, bottom: 88, left: 105 };
+const innerWidth = width - margin.left - margin.right;
+const innerHeight = height - margin.top - margin.bottom;
   
 var nested;
 var lineOpacity = 1;
 var lineStroke = '2px';
-
+var toolTip;
 var xScale, yScale, coloScale;
 
 const render = data => {
@@ -52,11 +65,13 @@ const colorLegend = (selection, props) => {
   const groupsEnter = groups
     .enter().append('g')
       .attr('class', 'tick');
+
   groupsEnter
     .merge(groups)
       .attr('transform', (d, i) =>
         `translate(0, ${i * spacing})`
       );
+
   groups.exit().remove();
 
   groupsEnter.append('circle')
@@ -125,8 +140,8 @@ const colorLegend = (selection, props) => {
   const lineGenerator = d3.line()
     .x(d => xScale(xValue(d)))
     .y(d => yScale(yValue(d)))
-    .curve(d3.curveBasis);
-  //console.log(yValue);
+   .curve(d3.curveLinear);
+ // console.log("Basis");
   const lastYValue = d =>
     yValue(d.values[d.values.length - 1]);
   
@@ -149,39 +164,111 @@ const colorLegend = (selection, props) => {
 	;
   
   var totalLength = path.node().getTotalLength();
-  
+ 
   path
 		.attr("stroke-dasharray", totalLength + " " + totalLength)
 		.attr("stroke-dashoffset", totalLength)
 	.transition() // Call Transition Method
-		.duration(6000) // Set Duration timing (ms)
-		.ease(d3.easeQuadOut) // Set Easing option
+		.duration(1000) // Set Duration timing (ms)
+		.ease(d3.easeLinear) // Set Easing option
 		.attr("stroke-dashoffset", 0); // Set final value of dash-offset for transition
-    g.append('text')
+   g.append('text')
       .attr('class', 'title')
       .attr('y', -10)
       .text(title);
   
   svg.append('g')
-    .attr('transform', `translate(850,121)`)
+    .attr('transform', `translate(1150,65)`)
     .call(colorLegend, {
       colorScale,
       circleRadius: 6,
-      spacing: 30,
-      textOffset: 15
+      spacing: 15,
+      textOffset: 10
     });
- 
-toolTip();
+
+annotations();
+createToolTip();
 }
 
-function toolTip() {
+function annotations(){
+ 
+  var line = d3.line();
+  const gUS =svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+ 	gUS.append("path")
+  .attr("d", line([[269, 20], [269, 351]]))
+  .attr("class", "annotation");
+ /* gUS.append("circle")
+  .attr("r", 6)
+  .attr("cx",69 )
+  .attr("cy",351)
+ .attr("class", "annotation")*/
+  gUS.append('text')
+  .attr("class", "annotation")
+  .attr("x",19)
+  .attr("y", 20)
+  .text("1st US case");
+  
+  const gUSL =svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+ 	gUSL.append("path")
+  .attr("d", line([[69, 20], [69, 351]]))
+  .attr("class", "annotation");
+/*  gUSL.append("circle")
+  .attr("r", 9)
+  .attr("cx",265 )
+  .attr("cy",350)
+ .attr("class", "annotation")*/
+  gUSL.append('text')
+  .attr("class", "annotation")
+  .attr("x",225)
+  .attr("y", 20)
+  .text("Lockdowns start")
+ 
+  
+  
+	const gL =svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+ 	gL.append("path")
+  .attr("d", line([[469, 20], [469, 351]]))
+  .attr("class", "annotation");
+  gL.append('text')
+  .attr("class", "annotation")
+  .attr("x",415)
+  .attr("y", 20)
+  .text("Lockdowns lift");
+  
+  
+  
 
-   tooltip = d3.select("#chart").append("div")
+  
+var annotation= document.getElementsByClassName("annotation");
+  console.log(annotation)
+  setTimeout(function(){
+    for(var i in annotation)
+    {  console.log(i);
+    annotation[i].style.display = "block";
+    }
+   }, 1000);
+}
+
+
+
+
+
+
+
+
+
+
+function createToolTip() {
+
+   toolTip = d3.select("#chart").append("div")
             .attr('id', 'tooltip')
 	    .style('position', 'absolute')
             .style("background-color", "white")
             .style('padding', 6)
-          //  .style('display', 'none');
+            .style('display', 'none');
    mouseG = svg.append("g")
             .attr("class", "mouse-over-effects")
 	    .attr('transform', `translate(${margin.left},${margin.top})`);
@@ -255,14 +342,14 @@ function toolTip() {
 //return `translate(xScale(d.values[idx].date)+${margin.left}, yScale(d.values[idx].cases)+${margin.top})`;
                 });
 
-              updateTooltipContent(mouse, nested)
+              updateTooltipContent(mouse, nested,toolTip)
 
             })
 
   
 };   ///// render function ends
       
- function updateTooltipContent(mouse, nested) {
+ function updateTooltipContent(mouse, nested, toolTip) {
 	var formatTime = d3.timeFormat("%B %d, %Y");
 	var formatCases = d3.format(",") ;
         sortingObj = []
@@ -282,20 +369,21 @@ function toolTip() {
         var nested1 = nested.slice().sort(function(a, b){
           return sortingArr.indexOf(a.key) - sortingArr.indexOf(b.key) // rank countries based on cases
         })
-        console.log(event.pageX);
-
-        tooltip.html(formatTime(sortingObj[0].date) + " (Cases:" + formatCases(sortingObj[0].cases) + ')')
-        //  .style('display', 'block')
-          .style('left', event.pageX)
-          .style('top', event.pageY )
-          .style('font-size', 10)
+      //  console.log("PageX:"+event.pageX);
+        toolTip.html(formatTime(sortingObj[0].date) + "(Cases: " + formatCases(sortingObj[0].cases) + ')')
+          .style('display', 'block')
+        //  .style('left', event.pageX+'px')
+        //  .style('top', event.pageY +'px' )
+    .style('left', '550px')
+       .style('left', '1150px')
+          .style('top', '400px' )
           .selectAll()
           .data(nested1).enter() // for each vehicle category, list out name and price of premium
           .append('div')
           .style('color', d => {
             return colorScale(d.key)
           })
-          .style('font-size', 10)
+          .style('font-size', '15px')
           .html(d => {
             var xDate = xScale.invert(mouse[0])
             var bisect = d3.bisector(function (d) { return d.date; }).left
@@ -304,10 +392,10 @@ function toolTip() {
             return d.key +  " Cases: " + formatCases(d.values[idx].cases);
           })
       }
-d3.csv('top10.csv')
+d3.csv('http://127.0.0.1:8000/global_confirmed_07302020_top10.csv')
   .then(data => {
     data.forEach(d => {
-      d.cases = +d.cases;
+      d.cases = +d.total_cases;
       d.date = new Date(d.date);
     });
     render(data);
