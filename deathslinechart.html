@@ -19,11 +19,11 @@ Lockdowns were lifted in most of the US right before Memorial Day, even before t
 <label for="cases">Chart Type</label>
 <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
   <option value="">Select...</option>
-  <option value="http://127.0.0.1:8000/caseslinechart.html">Confirmed</option>
-  <option value="http://127.0.0.1:8000/deathslinechart.html" selected>Deaths</option>
+  <option value="caseslinechart.html">Confirmed</option>
+  <option value="deathslinechart.html" selected>Deaths</option>
 </select>
-<button onclick="location.href = 'http://127.0.0.1:8000/deathslinechart.html';">Total</button>
-<button onclick="location.href = 'http://127.0.0.1:8000/deathsdailycaseslinechart.html';"">Daily </button>
+<button onclick="location.href = 'deathslinechart.html';">Total</button>
+<button onclick="location.href = 'deathsdailycaseslinechart.html';"">Daily </button>
 </div>
     <div id="chart">
      <svg width="1080" height="580"></svg>
@@ -399,7 +399,7 @@ function createToolTip() {
             return d.key +  " Cases: " + formatCases(d.values[idx].cases);
           })
       }
-d3.csv('http://127.0.0.1:8000/global_deaths_07312020_top10.csv')
+d3.csv('global_deaths_07312020_top10.csv')
   .then(data => {
     data.forEach(d => {
       d.cases = +d.deaths;
