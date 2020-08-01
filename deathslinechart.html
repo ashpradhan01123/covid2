@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Daily Cases for top 10 Countries</title>
+    <title>Total Deaths</title>
     <link rel="stylesheet" href="styles.css">
 <script src="https://d3js.org/d3.v5.min.js"></script>
   </head>
@@ -15,17 +15,15 @@ As of July 28th, The US accounted for almost a quarter of the confirmed cases of
 Lockdowns were lifted in most of the US right before Memorial Day, even before the number of cases were coming down in the US and other parts of the world. Thus the number of cases increased dramatically. 
 <p></p>
 </div>
-
 <div>
 <label for="cases">Chart Type</label>
 <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
   <option value="">Select...</option>
-  <option value="http://127.0.0.1:8000/caseslinechart.html" selected>Confirmed</option>
-  <option value="http://127.0.0.1:8000/deathslinechart.html">Deaths</option>
+  <option value="http://127.0.0.1:8000/caseslinechart.html">Confirmed</option>
+  <option value="http://127.0.0.1:8000/deathslinechart.html" selected>Deaths</option>
 </select>
-</select>
-<button onclick="location.href = 'http://127.0.0.1:8000/caseslinechart.html';">Total</button>
-<button onclick="location.href = 'http://127.0.0.1:8000/dailycaseslinechart.html';"">Daily </button>
+<button onclick="location.href = 'http://127.0.0.1:8000/deathslinechart.html';">Total</button>
+<button onclick="location.href = 'http://127.0.0.1:8000/deathsdailycaseslinechart.html';"">Daily </button>
 </div>
     <div id="chart">
      <svg width="1080" height="580"></svg>
@@ -47,7 +45,7 @@ var toolTip;
 var xScale, yScale, coloScale;
 
 const render = data => {
-  const title = 'Daily Covid Cases of Top 10 Countries as of July 28';
+  const title = 'Top 10 Countries with Most Deaths as of July 28';
   
   const xValue = d => d.date;
   const xAxisLabel = 'Date';
@@ -172,15 +170,14 @@ const colorLegend = (selection, props) => {
 	;
   
   var totalLength = path.node().getTotalLength();
- /*
+ 
   path
 		.attr("stroke-dasharray", totalLength + " " + totalLength)
 		.attr("stroke-dashoffset", totalLength)
 	.transition() // Call Transition Method
 		.duration(1000) // Set Duration timing (ms)
-		.ease(d3.easeQuadIn) // Set Easing option
+		.ease(d3.easeLinear) // Set Easing option
 		.attr("stroke-dashoffset", 0); // Set final value of dash-offset for transition
-*/
    g.append('text')
       .attr('class', 'title')
       .attr('y', -10)
@@ -258,7 +255,7 @@ var annotation= document.getElementsByClassName("annotation");
     {  console.log(i);
     annotation[i].style.display = "block";
     }
-   }, 1);
+   }, 1000);
 }
 
 
@@ -402,10 +399,10 @@ function createToolTip() {
             return d.key +  " Cases: " + formatCases(d.values[idx].cases);
           })
       }
-d3.csv('http://127.0.0.1:8000/global_confirmed_07312020_top10.csv')
+d3.csv('http://127.0.0.1:8000/global_deaths_07312020_top10.csv')
   .then(data => {
     data.forEach(d => {
-      d.cases = +d.daily_cases;
+      d.cases = +d.deaths;
       d.date = new Date(d.date);
     });
     render(data);
