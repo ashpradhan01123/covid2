@@ -3,6 +3,12 @@ body {
   overflow: scroll;
 }
 
+.pageheader {
+  font-size: 30px;
+  fill: #635F5D;
+  text-align: center;
+
+}
 
 .line-path {
   fill: none;
