@@ -3,6 +3,17 @@ body {
   overflow: scroll;
 }
 
+.buttonpressed {
+
+background-color:#49515e;
+color:#d5dce6;
+}
+
+.buttonnotpressed {
+background-color:#d5dce6;
+color:#49515e;
+}
+
 #pageheader {
   font-size: 30px;
   fill: #8E8883;
