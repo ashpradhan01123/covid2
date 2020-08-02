@@ -113,7 +113,7 @@ const colorLegend = (selection, props) => {
     .domain(d3.extent(data, yValue))
     .range([innerHeight, 0])
     .nice();
-  
+  console.log(d3.extent(data, yValue));
   colorScale = d3.scaleOrdinal(d3.schemeCategory10);
   
   const g = svg.append('g')
@@ -446,7 +446,7 @@ function createToolTip() {
             return d.key +  " Cases: " + formatCases(d.values[idx].cases);
           })
       }
-d3.csv('global_deaths_08012020_top10.csv')
+d3.csv('global_deaths_07312020_top10.csv')
   .then(data => {
     data.forEach(d => {
       d.cases = +d.daily_deaths;
