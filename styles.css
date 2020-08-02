@@ -3,16 +3,7 @@ body {
   overflow: scroll;
 }
 
-.buttonpressed {
 
-background-color:#49515e;
-color:#d5dce6;
-}
-
-.buttonnotpressed {
-background-color:#d5dce6;
-color:#49515e;
-}
 
 #pageheader {
   font-size: 30px;
@@ -27,6 +18,16 @@ color:#49515e;
  font-weight: bold;
 }
 
+#charttype .buttonpressed {
+
+background-color:#49515e;
+color:#d5dce6;
+}
+
+#charttype .buttonnotpressed {
+background-color:#d5dce6;
+color:#49515e;
+}
 #firstpara
 {
  font-size: 20px;
