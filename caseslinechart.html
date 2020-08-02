@@ -6,9 +6,11 @@
 <script src="https://d3js.org/d3.v5.min.js"></script>
   </head>
   <body>
-<div>
-<p class ="pageheader"> Comparison of 10 Hardest Hit Countries
+<div id ="pageheader">
+<p>Comparison of 10 Hardest Hit Countries
 </p>
+</div>
+<div>
 <p> A brief look at the Covid Cases in the Top 10 Countries in the world and how the US fared with respect to the rest of the world. 
 </p>
 <p>
@@ -21,12 +23,12 @@ Lockdowns were lifted in most of the US right before Memorial Day, even before t
 <label for="cases">Chart Type</label>
 <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
   <option value="">Select...</option>
-  <option value="caseslinechart.html" selected>Confirmed</option>
-  <option value="deathslinechart.html">Deaths</option>
+  <option value="http://127.0.0.1:8000/caseslinechart.html" selected>Confirmed</option>
+  <option value="http://127.0.0.1:8000/deathslinechart.html">Deaths</option>
 </select>
 </select>
-<button onclick="location.href = 'caseslinechart.html';">Total</button>
-<button onclick="location.href = 'dailycaseslinechart.html';"">Daily </button>
+<button onclick="location.href = 'http://127.0.0.1:8000/caseslinechart.html';">Total</button>
+<button onclick="location.href = 'http://127.0.0.1:8000/dailycaseslinechart.html';"">Daily </button>
 </div>
     <div id="chart">
      <svg width="1080" height="580"></svg>
@@ -187,7 +189,7 @@ const colorLegend = (selection, props) => {
       .text(title);
   
   svg.append('g')
-    .attr('transform', `translate(950,65)`)
+    .attr('transform', `translate(930,65)`)
     .call(colorLegend, {
       colorScale,
       circleRadius: 6,
@@ -380,13 +382,13 @@ function createToolTip() {
           return sortingArr.indexOf(a.key) - sortingArr.indexOf(b.key) // rank countries based on cases
         })
       //  console.log("PageX:"+event.pageX);
-        toolTip.html(formatTime(sortingObj[0].date) + "(Cases: " + formatCases(sortingObj[0].cases) + ')')
+        toolTip.html(formatTime(sortingObj[0].date))
           .style('display', 'block')
         //  .style('left', event.pageX+'px')
         //  .style('top', event.pageY +'px' )
-    .style('left', '550px')
-       .style('left', '950px')
-          .style('top', '400px' )
+    //.style('left', '550px')
+       .style('left', '930px')
+          .style('top', '500px' )
           .selectAll()
           .data(nested1).enter() // for each vehicle category, list out name and price of premium
           .append('div')
@@ -402,7 +404,7 @@ function createToolTip() {
             return d.key +  " Cases: " + formatCases(d.values[idx].cases);
           })
       }
-d3.csv('global_confirmed_07302020_top10.csv')
+d3.csv('http://127.0.0.1:8000/global_confirmed_07302020_top10.csv')
   .then(data => {
     data.forEach(d => {
       d.cases = +d.total_cases;

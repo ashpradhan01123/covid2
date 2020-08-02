@@ -7,27 +7,31 @@
   </head>
   <body>
 <div id ="pageheader">
-<p>Comparison of 10 Hardest Hit Countries
-</p>
+Comparison of 10 Hardest Hit Countries
 </div>
-<div>
-<p> A brief look at the Covid Cases in the Top 10 Countries in the world and how the US fared with respect to the rest of the world. 
-</p>
+<div id="firstpara">
+A brief look at the Covid Cases in the Top 10 Countries in the world and how the US fared with respect to the rest of the world. 
+</div>
+<div id="secondpara">
 <p>
-As of July 28th, The US accounted for almost a quarter of the confirmed cases of the entire world. The chart shows when the lockdowns started for most of these countries, including India, the second largest population in the world.
+The US accounts for almost a quarter of Covid deaths of the entire world. During the lockdown phase, there was a distinct downtrend in the number of deaths, but the chart shows that it was prematurely lifted, mostly before the Memorial Day weekend. The downtrend has thus slowed and is slowly shifting upwards again.
 </p>
-Lockdowns were lifted in most of the US right before Memorial Day, even before the number of cases were coming down in the US and other parts of the world. Thus the number of cases increased dramatically. 
-<p></p>
 </div>
+<div id ="thirdpara">
+<p>
+*Moving the mouse across the chart will show the detailed number of cases and the list will change according to their rank on that particular day.
+</p>
+</div>
+
 <div>
 <label for="cases">Chart Type</label>
 <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
   <option value="">Select...</option>
-  <option value="caseslinechart.html">Confirmed</option>
-  <option value="deathslinechart.html" selected>Deaths</option>
+  <option value="http://127.0.0.1:8000/caseslinechart.html">Confirmed</option>
+  <option value="http://127.0.0.1:8000/deathslinechart.html" selected>Deaths</option>
 </select>
-<button onclick="location.href = 'deathslinechart.html';">Total</button>
-<button onclick="location.href = 'deathsdailycaseslinechart.html';"">Daily </button>
+<button onclick="location.href = 'http://127.0.0.1:8000/deathslinechart.html';">Total</button>
+<button onclick="location.href = 'http://127.0.0.1:8000/deathsdailycaseslinechart.html';"">Daily </button>
 </div>
     <div id="chart">
      <svg width="1080" height="580"></svg>
@@ -56,7 +60,7 @@ const render = data => {
   
   const yValue = d => d.cases;
   const circleRadius = 6;
-  const yAxisLabel = 'Cases';
+  const yAxisLabel = 'Deaths';
   
   const colorValue = d => d.country;
 
@@ -189,7 +193,7 @@ const colorLegend = (selection, props) => {
       .text(title);
   
   svg.append('g')
-    .attr('transform', `translate(950,65)`)
+    .attr('transform', `translate(930,65)`)
     .call(colorLegend, {
       colorScale,
       circleRadius: 6,
@@ -201,64 +205,102 @@ annotations();
 createToolTip();
 }
 
+
 function annotations(){
- 
-  var line = d3.line();
+ var line = d3.line();
   const gUS =svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
  	gUS.append("path")
-  .attr("d", line([[295, 20], [295, 430]]))
-  .attr("class", "annotation");
+  .attr("d", line([[105, 120], [105, 430]]))
+  .attr("class", "annotationdailycases");
  /* gUS.append("circle")
   .attr("r", 6)
   .attr("cx",69 )
   .attr("cy",351)
  .attr("class", "annotation")*/
   gUS.append('text')
-  .attr("class", "annotation")
-  .attr("x",19)
+  .attr("class", "annotationdailycases")
+  .attr("x",0)
   .attr("y", 20)
-  .text("1st US case");
+  .text("US :6 Deaths, Italy: 52");
   
   const gUSL =svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
  	gUSL.append("path")
-  .attr("d", line([[79, 20], [79, 430]]))
-  .attr("class", "annotation");
+  .attr("d", line([[5, 20], [5, 430]]))
+  .attr("class", "annotationdailycases");
 /*  gUSL.append("circle")
   .attr("r", 9)
   .attr("cx",265 )
   .attr("cy",350)
  .attr("class", "annotation")*/
   gUSL.append('text')
-  .attr("class", "annotation")
-  .attr("x",230)
-  .attr("y", 20)
-  .text("Lockdowns start")
+  .attr("class", "annotationdailycases")
+  .attr("x",60)
+  .attr("y", 115)
+  .text("Lockdowns start");
  
   
   
-	const gL =svg.append('g')
+const gL =svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
  	gL.append("path")
-  .attr("d", line([[565, 20], [565, 430]]))
+  .attr("d", line([[460, 120], [460, 430]]))
   .attr("class", "annotation");
   gL.append('text')
-  .attr("class", "annotation")
-  .attr("x",520)
-  .attr("y", 20)
+  .attr("class", "annotationdailycases")
+  .attr("x",410)
+  .attr("y", 115)
   .text("Lockdowns lift");
+
+const gUpSlope =svg.append('g')
+ .attr('transform', `translate(${margin.left},${margin.top})`);
+ gUpSlope.append("path")
+  .attr("d", line([[340, 200], [540, 250]]))
+  .attr("class", "annotation");
+  gUpSlope.append('text')
+  .attr("class", "annotation")
+  .attr("x",405)
+  .attr("y", 290)
+  .attr("transform", "rotate(15 750,10)")
+  .text("Downward slope");
   
+
+/*
+const gDownSlope =svg.append('g')
+ .attr('transform', `translate(${margin.left},${margin.top})`);
+ gDownSlope.append("path")
+  .attr("d", line([[600, 250], [740, 50]]))
+  .attr("class", "annotation");
+  gDownSlope.append('text')
+  .attr("class", "annotation")
+  .attr("x",405)
+  .attr("y",525)
+  .attr("transform", "rotate(-50 105,45)")
+  .text("Upward slope");
   
-  
+*/
+
+
 
   
 var annotation= document.getElementsByClassName("annotation");
-  console.log(annotation)
+ // console.log(annotation)
   setTimeout(function(){
     for(var i in annotation)
-    {  console.log(i);
+    { // console.log(i);
     annotation[i].style.display = "block";
+    }
+   }, 1);  
+  
+
+  
+var annotationdaily= document.getElementsByClassName("annotationdailycases");
+ // console.log(annotation)
+  setTimeout(function(){
+    for(var i in annotationdaily)
+    { // console.log(i);
+    annotationdaily[i].style.display = "block";
     }
    }, 1);
 }
@@ -382,13 +424,13 @@ function createToolTip() {
           return sortingArr.indexOf(a.key) - sortingArr.indexOf(b.key) // rank countries based on cases
         })
       //  console.log("PageX:"+event.pageX);
-        toolTip.html(formatTime(sortingObj[0].date) + "(Cases: " + formatCases(sortingObj[0].cases) + ')')
+         toolTip.html(formatTime(sortingObj[0].date))
           .style('display', 'block')
         //  .style('left', event.pageX+'px')
         //  .style('top', event.pageY +'px' )
     .style('left', '550px')
-       .style('left', '950px')
-          .style('top', '400px' )
+       .style('left', '930px')
+          .style('top', '500px' )
           .selectAll()
           .data(nested1).enter() // for each vehicle category, list out name and price of premium
           .append('div')
@@ -404,7 +446,7 @@ function createToolTip() {
             return d.key +  " Cases: " + formatCases(d.values[idx].cases);
           })
       }
-d3.csv('global_deaths_07312020_top10.csv')
+d3.csv('http://127.0.0.1:8000/global_deaths_07312020_top10.csv')
   .then(data => {
     data.forEach(d => {
       d.cases = +d.daily_deaths;

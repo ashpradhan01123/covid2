@@ -23,11 +23,11 @@ Lockdowns were lifted in most of the US right before Memorial Day, even before t
 <label for="cases">Chart Type</label>
 <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
   <option value="">Select...</option>
-  <option value="caseslinechart.html">Confirmed</option>
-  <option value="deathslinechart.html" selected>Deaths</option>
+  <option value="http://127.0.0.1:8000/caseslinechart.html">Confirmed</option>
+  <option value="http://127.0.0.1:8000/deathslinechart.html" selected>Deaths</option>
 </select>
-<button onclick="location.href = 'deathslinechart.html';">Total</button>
-<button onclick="location.href = 'deathsdailycaseslinechart.html';"">Daily </button>
+<button onclick="location.href = 'http://127.0.0.1:8000/deathslinechart.html';">Total</button>
+<button onclick="location.href = 'http://127.0.0.1:8000/deathsdailycaseslinechart.html';"">Daily </button>
 </div>
     <div id="chart">
      <svg width="1080" height="580"></svg>
@@ -56,7 +56,7 @@ const render = data => {
   
   const yValue = d => d.cases;
   const circleRadius = 6;
-  const yAxisLabel = 'Cases';
+  const yAxisLabel = 'Deaths';
   
   const colorValue = d => d.country;
 
@@ -188,7 +188,7 @@ const colorLegend = (selection, props) => {
       .text(title);
   
   svg.append('g')
-    .attr('transform', `translate(950,65)`)
+    .attr('transform', `translate(930,65)`)
     .call(colorLegend, {
       colorScale,
       circleRadius: 6,
@@ -206,7 +206,7 @@ function annotations(){
   const gUS =svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
  	gUS.append("path")
-  .attr("d", line([[295, 20], [295, 430]]))
+  .attr("d", line([[105, 120], [105, 430]]))
   .attr("class", "annotation");
  /* gUS.append("circle")
   .attr("r", 6)
@@ -215,14 +215,14 @@ function annotations(){
  .attr("class", "annotation")*/
   gUS.append('text')
   .attr("class", "annotation")
-  .attr("x",19)
+  .attr("x",0)
   .attr("y", 20)
-  .text("1st US case");
+  .text("US :6 Deaths, Italy: 52");
   
   const gUSL =svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
  	gUSL.append("path")
-  .attr("d", line([[79, 20], [79, 430]]))
+  .attr("d", line([[5, 20], [5, 430]]))
   .attr("class", "annotation");
 /*  gUSL.append("circle")
   .attr("r", 9)
@@ -231,21 +231,21 @@ function annotations(){
  .attr("class", "annotation")*/
   gUSL.append('text')
   .attr("class", "annotation")
-  .attr("x",230)
-  .attr("y", 20)
+  .attr("x",60)
+  .attr("y", 115)
   .text("Lockdowns start")
  
   
   
-	const gL =svg.append('g')
+const gL =svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
  	gL.append("path")
-  .attr("d", line([[565, 20], [565, 430]]))
+  .attr("d", line([[460, 120], [460, 430]]))
   .attr("class", "annotation");
   gL.append('text')
   .attr("class", "annotation")
-  .attr("x",520)
-  .attr("y", 20)
+  .attr("x",410)
+  .attr("y", 115)
   .text("Lockdowns lift");
   
   
@@ -381,13 +381,13 @@ function createToolTip() {
           return sortingArr.indexOf(a.key) - sortingArr.indexOf(b.key) // rank countries based on cases
         })
       //  console.log("PageX:"+event.pageX);
-        toolTip.html(formatTime(sortingObj[0].date) + "(Cases: " + formatCases(sortingObj[0].cases) + ')')
+         toolTip.html(formatTime(sortingObj[0].date))
           .style('display', 'block')
         //  .style('left', event.pageX+'px')
         //  .style('top', event.pageY +'px' )
     .style('left', '550px')
-       .style('left', '950px')
-          .style('top', '400px' )
+       .style('left', '930px')
+          .style('top', '500px' )
           .selectAll()
           .data(nested1).enter() // for each vehicle category, list out name and price of premium
           .append('div')
@@ -403,7 +403,7 @@ function createToolTip() {
             return d.key +  " Cases: " + formatCases(d.values[idx].cases);
           })
       }
-d3.csv('global_deaths_07312020_top10.csv')
+d3.csv('http://127.0.0.1:8000/global_deaths_07312020_top10.csv')
   .then(data => {
     data.forEach(d => {
       d.cases = +d.deaths;
