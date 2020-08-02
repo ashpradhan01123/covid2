@@ -46,7 +46,11 @@ color:#49515e;
 
 }
 .citation {
+<<<<<<< HEAD
 background: #f2d891
+=======
+background: #f2d891;
+>>>>>>> 59a864cc6a4504a9b1a2b7b3e4b6f1550da1ec2f
  font-size: 20px;
 fill: #8E8883;
 }
